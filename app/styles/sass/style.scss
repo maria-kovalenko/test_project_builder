@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
 @font-face {
   font-family: "Gilroy-Regular";
   src: url(../../../fonts/Gilroy-Regular.woff),
@@ -210,6 +212,56 @@ input[type="radio"].visually-hidden {
   padding-top: 10px;
 }
 
+.main-nav__list {
+  padding-right: 15px;
+}
+
 .main-nav__list a {
   color: #fff;
+}
+
+.site-list__item {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.margin__sub-menu {
+  margin-top: 15px;
+  font-family: "Gilroy-Regular", sans-serif, serif;
+  font-weight: 400;
+}
+
+.margin__info {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.margin__info li {
+  margin-bottom: 9px;
+}
+.margin__name {
+  margin-bottom: 10px;
+}
+
+.buy-list li {
+  margin-bottom: 9px;
+}
+
+.call-list {
+  margin-bottom: 64px;
+}
+
+.call-list__number {
+  margin-bottom: 6px;
+  font-family: "Gilroy-Semibold", sans-serif, serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.call-list__order a {
+  text-decoration: underline;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
