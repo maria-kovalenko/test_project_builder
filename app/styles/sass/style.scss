@@ -1,39 +1,53 @@
 @font-face {
-  font-family: "Druk-Wide-Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: url(../../fonts/Druk-Wide-Medium.woff),
-    url(../../fonts/Druk-Wide-Medium.woff2);
+  font-family: "Gilroy-Regular";
+  src: url(/app/fonts/Gilroy-Regular.woff), url(/app/fonts/Gilroy-Regular.woff2);
 }
 
 @font-face {
-  font-family: "Druk-Wide-Cyr";
-
-  src: url(../../fonts/DrukWideCyr4.woff), url(../../fonts/DrukWideCyr4.woff2);
+  font-family: "Gilroy-Medium";
+  src: url(/app/fonts/Gilroy-Medium.woff), url(/app/fonts/Gilroy-Medium.woff2);
 }
 
 @font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: normal;
-  src: url(../../fonts/Montserrat-Medium.woff),
-    url(../../fonts/Montserrat-Medium.woff2);
+  font-family: "Gilroy-Bold";
+  src: url(/app/fonts/Gilroy-Bold.woff), url(/app/fonts/Gilroy-Bold.woff2);
 }
 
-$mobile-width: 375px;
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: url(/app/fonts/Gilroy-Semibold.woff),
+    url(/app/fonts/Gilroy-Semibold.woff);
+}
+
+@font-face {
+  font-family: "Gilroy-UltraLight";
+  src: url(/app/fonts/Gilroy-UltraLight.woff),
+    url(/app/fonts/Gilroy-UltraLight.woff);
+}
+
+$bg-darkblue: #212d55;
+$bg-lightblue: #31bef4;
+$bg-gray: #656d89;
+
+$mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1200px;
 
 body {
-  min-width: 375px;
-  max-width: 1920px;
-  margin: 0;
+  min-width: 320px;
+  max-width: 2500px;
+  margin: 0 auto;
   padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: "Druk-Wide-Cyr", sans-serif, serif;
-  color: #fff;
-  background-color: #000;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Gilroy-Regular", sans-serif, serif;
+  color: $bg-darkblue;
+  background-color: #fff;
+  background-image: url(../../../img/header-blur.svg),
+    url(../../../img/clouds.svg), url(../../../img/bg-image.png);
+
+  background-position: center 0, center 540px, -427px -130px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 img {
@@ -49,13 +63,10 @@ ul {
 
 a {
   text-decoration: none;
-  color: #fff;
   cursor: pointer;
-}
-
-p {
-  font-family: "Montserrat", sans-serif, serif;
-  word-wrap: break-word;
+  color: $bg-darkblue;
+  &:hover {
+  }
 }
 
 .button {
@@ -97,4 +108,78 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-header {
+  height: 129px;
+  margin-bottom: 114px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav__name {
+  margin-right: 10px;
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 31px;
+  height: 23px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-nav__toggle--closed::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 31px;
+  height: 2.42px;
+  border-radius: 50px;
+  background-color: $bg-darkblue;
+  box-shadow: 0 10px 0 0 $bg-darkblue, 0 20px 0 0 $bg-darkblue;
+}
+
+.main-nav__toggle--opened {
+  &::before {
+    position: absolute;
+    content: "";
+    top: calc(50%);
+    left: calc(50% - 7.5px);
+    width: 15px;
+    height: 1px;
+    border-radius: 50px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(50%);
+    left: calc(50% - 7.5px);
+    width: 15px;
+    height: 1px;
+    border-radius: 50px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+  }
 }
