@@ -12,6 +12,7 @@
     <header class="page-header">
 
       <div class="page-header__wrapper container">
+
         <a href="index.html" class="page-header__logo">
           <img
             src="./img/mobile-logo-image.svg"
@@ -22,73 +23,31 @@
           />
         </a>
 
-        <div class="page-header__nav">
-          <p class="page-header__name">Меню</p>
-          <button class="page-header__toggle page-header__toggle--closed" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+        <nav class="main-nav" style="display: block">
+
+          <div class="main-nav__wrapper container">
+          <a href="index.html" class="page-header__logo">
+            <img
+              src="./img/open-menu-logo-image.svg"
+              class="page-header__logo-image"
+              width="148"
+              height="79"
+              alt="Строитель"
+            />
+          </a>
+          <button class="page-header__toggle page-header__toggle--opened" type="button">
+            <span class="visually-hidden">Закрыть меню</span>
           </button>
+        </div>
 
-          <nav class="main-nav" style="display: block">
-
-            <div class="main-nav__wrapper container">
-            <a href="index.html" class="page-header__logo">
-              <img
-                src="./img/open-menu-logo-image.svg"
-                class="page-header__logo-image"
-                width="148"
-                height="79"
-                alt="Строитель"
-              />
-            </a>
-            <button class="page-header__toggle page-header__toggle--opened" type="button">
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
-          </div>
-
-          
-            <ul class="main-nav__list site-list container">
-              <li class="site-list__item margin ">
-                Жилые комплексы
-                    <ul class="margin__sub-menu">
-                        <li class="margin__name">
-                            ЖК Космос
-                                <ul class="margin__info" style="display: none;">
-                                    <li><a href="#"> Преимущества</a></li>
-                                    <li><a href="#"> Инфраструктура</a></li>
-                                    <li><a href="#"> Планировка</a></li>
-                                    <li><a href="#"> Отделка</a></li>
-                                    <li><a href="#"> Описание</a></li>
-                                    <li><a href="#"> Контакты</a></li>
-                                    <li><a href="#"> Документация</a></li>
-                                </ul>
-                          </li>
-                          <li class="margin__name">
-                              ЖК Яблоновский
-                              <ul class="margin__info">
-                                <li><a href="#"> Преимущества</a></li>
-                                <li><a href="#"> Инфраструктура</a></li>
-                                <li><a href="#"> Планировка</a></li>
-                                <li><a href="#"> Отделка</a></li>
-                                <li><a href="#"> Описание</a></li>
-                                <li><a href="#"> Контакты</a></li>
-                                <li><a href="#"> Документация</a></li>
-                              </ul>
-                            </li>
-                            <li class="margin__name">
-                              ЖК на Шоссейной
-                              <ul class="margin__info"  style="display: none;">
-                                <li><a href="#"> Преимущества</a></li>
-                                <li><a href="#"> Инфраструктура</a></li>
-                                <li><a href="#"> Планировка</a></li>
-                                <li><a href="#"> Отделка</a></li>
-                                <li><a href="#"> Описание</a></li>
-                                <li><a href="#"> Контакты</a></li>
-                                <li><a href="#"> Документация</a></li>
-                              </ul>
-                            </li>
-                            <li class="margin__name">
-                              ЖК Солнечная
-                                <ul class="margin__info" style="display: none;">
+        
+          <ul class="main-nav__list site-list container">
+            <li class="site-list__item margin ">
+              Жилые комплексы
+                  <ul class="margin__sub-menu">
+                      <li class="margin__name">
+                          ЖК Космос
+                              <ul class="margin__info" style="display: none;">
                                   <li><a href="#"> Преимущества</a></li>
                                   <li><a href="#"> Инфраструктура</a></li>
                                   <li><a href="#"> Планировка</a></li>
@@ -96,33 +55,76 @@
                                   <li><a href="#"> Описание</a></li>
                                   <li><a href="#"> Контакты</a></li>
                                   <li><a href="#"> Документация</a></li>
-                                </ul>
-                            </li>
-                </ul>
-              </li>
-              <li class="site-list__item">О компании</li>
-              <li class="site-list__item margin">
-                Как купить
-                <ul class="margin__sub-menu buy-list">
-                  <li><a href="#"> Ипотека</a></li>
-                  <li><a href="#"> Военная ипотека</a></li>
-                  <li><a href="#"> Материнский капитал</a></li>
-                  <li><a href="#"> Наличный рассчет</a></li>
-                  <li><a href="#"> Рассрочка</a></li>
-                </ul>
-              </li>
-              <li class="site-list__item">Контакты</li>
-            </ul>
+                              </ul>
+                        </li>
+                        <li class="margin__name">
+                            ЖК Яблоновский
+                            <ul class="margin__info">
+                              <li><a href="#"> Преимущества</a></li>
+                              <li><a href="#"> Инфраструктура</a></li>
+                              <li><a href="#"> Планировка</a></li>
+                              <li><a href="#"> Отделка</a></li>
+                              <li><a href="#"> Описание</a></li>
+                              <li><a href="#"> Контакты</a></li>
+                              <li><a href="#"> Документация</a></li>
+                            </ul>
+                          </li>
+                          <li class="margin__name">
+                            ЖК на Шоссейной
+                            <ul class="margin__info"  style="display: none;">
+                              <li><a href="#"> Преимущества</a></li>
+                              <li><a href="#"> Инфраструктура</a></li>
+                              <li><a href="#"> Планировка</a></li>
+                              <li><a href="#"> Отделка</a></li>
+                              <li><a href="#"> Описание</a></li>
+                              <li><a href="#"> Контакты</a></li>
+                              <li><a href="#"> Документация</a></li>
+                            </ul>
+                          </li>
+                          <li class="margin__name">
+                            ЖК Солнечная
+                              <ul class="margin__info" style="display: none;">
+                                <li><a href="#"> Преимущества</a></li>
+                                <li><a href="#"> Инфраструктура</a></li>
+                                <li><a href="#"> Планировка</a></li>
+                                <li><a href="#"> Отделка</a></li>
+                                <li><a href="#"> Описание</a></li>
+                                <li><a href="#"> Контакты</a></li>
+                                <li><a href="#"> Документация</a></li>
+                              </ul>
+                          </li>
+              </ul>
+            </li>
+            <li class="site-list__item">О компании</li>
+            <li class="site-list__item margin">
+              Как купить
+              <ul class="margin__sub-menu buy-list">
+                <li><a href="#"> Ипотека</a></li>
+                <li><a href="#"> Военная ипотека</a></li>
+                <li><a href="#"> Материнский капитал</a></li>
+                <li><a href="#"> Наличный рассчет</a></li>
+                <li><a href="#"> Рассрочка</a></li>
+              </ul>
+            </li>
+            <li class="site-list__item">Контакты</li>
+          </ul>
 
 
-            <ul class="main-nav__list call-list container">
-              <li class="call-list__number">
-               +7 (918) 377-48-10
-              </li>
-              <li class="call-list__order"><a href="#">Заказать звонок</a></li>
-            </ul>
-          </nav>
+          <ul class="main-nav__list call-list container">
+            <li class="call-list__number">
+             +7 (918) 377-48-10
+            </li>
+            <li class="call-list__order"><a href="#">Заказать звонок</a></li>
+          </ul>
+        </nav>
+
+        <div class="page-header__button-wrapper">
+          <p class="page-header__name">Меню</p>
+          <button class="page-header__toggle page-header__toggle--closed" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
+
       </div>
     </header>
 

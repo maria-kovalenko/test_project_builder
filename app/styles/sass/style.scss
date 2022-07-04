@@ -133,7 +133,7 @@ input[type="radio"].visually-hidden {
   padding-top: 20px;
 }
 
-.page-header__nav {
+.page-header__button-wrapper {
   display: flex;
   align-items: center;
 }
@@ -228,9 +228,34 @@ input[type="radio"].visually-hidden {
 }
 
 .margin__sub-menu {
+  position: relative;
   margin-top: 15px;
   font-family: "Gilroy-Regular", sans-serif, serif;
   font-weight: 400;
+}
+
+.margin__name {
+  &::before {
+    position: absolute;
+    content: "";
+
+    right: -9px;
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    right: -15px;
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+  }
 }
 
 .margin__info {

@@ -98,7 +98,7 @@ input[type=radio].visually-hidden {
   align-items: center;
   padding-top: 20px
 }
-.page-header__nav {
+.page-header__button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,9 +194,32 @@ input[type=radio].visually-hidden {
   margin-bottom: 30px
 }
 .margin__sub-menu {
+  position: relative;
   margin-top: 15px;
   font-family: Gilroy-Regular,sans-serif,serif;
   font-weight: 400
+}
+.margin__name::before {
+  position: absolute;
+  content: "";
+  right: -9px;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.margin__name::after {
+  position: absolute;
+  content: "";
+  right: -15px;
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg)
 }
 .margin__info {
   margin-top: 15px;
