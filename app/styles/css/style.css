@@ -1,22 +1,22 @@
 @font-face {
   font-family: Gilroy-Regular;
-  src: url(/app/fonts/Gilroy-Regular.woff),url(/app/fonts/Gilroy-Regular.woff2)
+  src: url(../../../fonts/Gilroy-Regular.woff),url(../../../fonts/Gilroy-Regular.woff2)
 }
 @font-face {
   font-family: Gilroy-Medium;
-  src: url(/app/fonts/Gilroy-Medium.woff),url(/app/fonts/Gilroy-Medium.woff2)
+  src: url(../../../fonts/Gilroy-Medium.woff),url(../../../fonts/Gilroy-Medium.woff2)
 }
 @font-face {
   font-family: Gilroy-Bold;
-  src: url(/app/fonts/Gilroy-Bold.woff),url(/app/fonts/Gilroy-Bold.woff2)
+  src: url(../../../fonts/Gilroy-Bold.woff),url(../../../fonts/Gilroy-Bold.woff2)
 }
 @font-face {
   font-family: Gilroy-Semibold;
-  src: url(/app/fonts/Gilroy-Semibold.woff),url(/app/fonts/Gilroy-Semibold.woff)
+  src: url(../../../fonts/Gilroy-Semibold.woff),url(../../../fonts/Gilroy-Semibold.woff)
 }
 @font-face {
   font-family: Gilroy-UltraLight;
-  src: url(/app/fonts/Gilroy-UltraLight.woff),url(/app/fonts/Gilroy-UltraLight.woff)
+  src: url(../../../fonts/Gilroy-UltraLight.woff),url(../../../fonts/Gilroy-UltraLight.woff)
 }
 body {
   min-width: 320px;
@@ -81,6 +81,7 @@ input[type=radio].visually-hidden {
   margin: 0 auto
 }
 .page-header {
+  position: relative;
   height: 129px;
   margin-bottom: 114px
 }
@@ -96,15 +97,21 @@ input[type=radio].visually-hidden {
   align-items: center;
   padding-top: 20px
 }
-.main-nav {
+.page-header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
 }
-.main-nav__name {
-  margin-right: 10px
+.page-header__name {
+  margin: 0;
+  margin-right: 10px;
+  line-height: 40px;
+  font-family: Gilroy-Medium,sans-serif,serif
 }
-.main-nav__toggle {
+.page-header__toggle {
   position: relative;
   width: 31px;
   height: 23px;
@@ -113,7 +120,7 @@ input[type=radio].visually-hidden {
   background-color: transparent;
   cursor: pointer
 }
-.main-nav__toggle--closed::before {
+.page-header__toggle--closed::before {
   position: absolute;
   content: "";
   top: 0;
@@ -125,11 +132,11 @@ input[type=radio].visually-hidden {
   -webkit-box-shadow: 0 10px 0 0 #212d55,0 20px 0 0 #212d55;
   box-shadow: 0 10px 0 0 #212d55,0 20px 0 0 #212d55
 }
-.main-nav__toggle--opened::before {
+.page-header__toggle--opened::before {
   position: absolute;
   content: "";
   top: 50%;
-  left: calc(50% - 7.5px);
+  right: 0;
   width: 15px;
   height: 1px;
   border-radius: 50px;
@@ -138,11 +145,11 @@ input[type=radio].visually-hidden {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg)
 }
-.main-nav__toggle--opened::after {
+.page-header__toggle--opened::after {
   position: absolute;
   content: "";
   top: 50%;
-  left: calc(50% - 7.5px);
+  right: 0;
   width: 15px;
   height: 1px;
   border-radius: 50px;
@@ -150,4 +157,29 @@ input[type=radio].visually-hidden {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg)
+}
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: end;
+  z-index: 1;
+  background-color: #212d55;
+  color: #fff
+}
+.main-nav__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10px
+}
+.main-nav__list a {
+  color: #fff
 }

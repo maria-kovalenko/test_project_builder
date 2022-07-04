@@ -9,9 +9,9 @@
   </head>
 
   <body>
-    <header class="page-header container">
+    <header class="page-header">
 
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper container">
         <a href="index.html" class="page-header__logo">
           <img
             src="./img/mobile-logo-image.svg"
@@ -22,16 +22,33 @@
           />
         </a>
 
-        <nav class="main-nav">
-          <p class="main-nav__name">Меню</p>
-          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+        <div class="page-header__nav">
+          <p class="page-header__name">Меню</p>
+          <button class="page-header__toggle page-header__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
-          <div class="main-nav__wrapper" style="display: none">
-            <ul class="main-nav__list site-list">
+          <nav class="main-nav" style="display: block">
+
+            <div class="main-nav__wrapper container">
+            <a href="index.html" class="page-header__logo">
+              <img
+                src="./img/open-menu-logo-image.svg"
+                class="page-header__logo-image"
+                width="148"
+                height="79"
+                alt="Строитель"
+              />
+            </a>
+            <button class="page-header__toggle page-header__toggle--opened" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+          </div>
+
+          
+            <ul class="main-nav__list site-list container">
               <li class="site-list__item">
-                <a href="#">Жилые комплексы</a>
+                Жилые комплексы
                 <ul class="site-list__list-description">
                   <li>
                     ЖК Космос
@@ -83,9 +100,9 @@
                   </li>
                 </ul>
               </li>
-              <li class="site-list__item"><a href="#">О компании</a></li>
+              <li class="site-list__item">О компании</li>
               <li class="site-list__item">
-                <a href="#">Как купить</a>
+                Как купить
                 <ul>
                   <li><a href="#"> Ипотека</a></li>
                   <li><a href="#"> Военная ипотека</a></li>
@@ -96,14 +113,14 @@
               </li>
               <li class="site-list__item"><a href="#">Контакты</a></li>
             </ul>
-            <ul class="main-nav__list call-list">
+            <ul class="main-nav__list call-list container">
               <li class="site-list__item">
-                <a href="#">+7 (918) 377-48-10</a>
+               +7 (918) 377-48-10
               </li>
               <li class="site-list__item"><a href="#">Заказать звонок</a></li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
 
