@@ -30,7 +30,7 @@ body {
   color: #212d55;
   background-color: #fff;
   background-image: url(../../../img/header-blur.svg),url(../../../img/bg-image.png);
-  background-position: center 0,-427px -130px;
+  background-position: center 0,-427px 0;
   background-repeat: no-repeat,no-repeat
 }
 img {
@@ -264,10 +264,10 @@ input[type=radio].visually-hidden {
 .page-main {
   background-image: url(../../../img/clouds.svg);
   background-repeat: no-repeat;
-  background-position: center 0
+  background-position: -420px 433px
 }
 .page-main__wrapper {
-  margin-bottom: 152px;
+  margin-bottom: 437px;
   text-align: center
 }
 .page-main__title {
