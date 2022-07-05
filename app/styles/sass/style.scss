@@ -213,7 +213,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav__list {
-  padding-right: 15px;
+  padding-right: 18px;
   word-break: break-word;
   box-sizing: border-box;
 }
@@ -223,72 +223,60 @@ input[type="radio"].visually-hidden {
 }
 
 .site-list__item {
-  position: relative;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #fff;
   margin-bottom: 30px;
 }
 
-.margin__sub-menu {
-  margin-top: 15px;
-  font-family: "Gilroy-Regular", sans-serif, serif;
-  font-weight: 400;
-}
 .arrow {
-  position: absolute;
-  border: solid #fff;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 4px;
+  position: relative;
+}
 
+.arrow {
+  &::before {
+    display: none;
+    position: absolute;
+    content: "";
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    padding: 3px;
+
+    transform: rotate(45deg);
+  }
+}
+.arrow--up.arrow::before {
+  display: inline-block;
+  right: -15px;
+  top: 11px;
+  transform: rotate(-135deg);
+}
+.arrow--down.arrow::before {
+  display: inline-block;
+  right: -15px;
+  top: 5px;
   transform: rotate(45deg);
 }
 
-.arrow-position {
-  right: -15px;
-  top: 4px;
+.margin-top {
+  margin-top: 15px;
 }
 
-// .arrow {
-//   &::before {
-//     position: absolute;
-//     content: "";
+.sub-item {
+  margin-bottom: 10px;
+  font-family: "Gilroy-Regular", sans-serif, serif;
+  font-weight: 400;
+}
 
-//     right: -9px;
-//     width: 10px;
-//     height: 1px;
-//     background-color: #fff;
-//     transform: rotate(45deg);
-//   }
-
-//   &::after {
-//     position: absolute;
-//     content: "";
-
-//     right: -15px;
-//     width: 10px;
-//     height: 1px;
-//     background-color: #fff;
-//     transform: rotate(-45deg);
-//   }
-// }
-
-.margin__info {
+.sub-item__list {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.margin__info li {
+.description {
   margin-bottom: 9px;
-}
-.margin__name {
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.buy-list li {
-  margin-bottom: 9px;
+  font-family: "Gilroy-Regular", sans-serif, serif;
+  font-weight: 400;
 }
 
 .call-list {
@@ -296,14 +284,19 @@ input[type="radio"].visually-hidden {
 }
 
 .call-list__number {
+  margin: 0;
   margin-bottom: 6px;
   font-family: "Gilroy-Semibold", sans-serif, serif;
   font-size: 20px;
   line-height: 25px;
 }
 
-.call-list__order a {
-  text-decoration: underline;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
+.call-list__order {
+  margin-top: 0;
+  a {
+    display: inline-block;
+    text-decoration: underline;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+  }
 }

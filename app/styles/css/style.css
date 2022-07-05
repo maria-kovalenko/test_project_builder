@@ -182,7 +182,7 @@ input[type=radio].visually-hidden {
   padding-top: 10px
 }
 .main-nav__list {
-  padding-right: 15px;
+  padding-right: 18px;
   word-break: break-word;
   -webkit-box-sizing: border-box;
   box-sizing: border-box
@@ -191,55 +191,73 @@ input[type=radio].visually-hidden {
   color: #fff
 }
 .site-list__item {
-  position: relative;
   font-family: Raleway,sans-serif;
   font-weight: 600;
   color: #fff;
   margin-bottom: 30px
 }
-.margin__sub-menu {
-  margin-top: 15px;
-  font-family: Gilroy-Regular,sans-serif,serif;
-  font-weight: 400
-}
 .arrow {
+  position: relative
+}
+.arrow::before {
+  display: none;
   position: absolute;
+  content: "";
   border: solid #fff;
   border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 4px;
+  padding: 3px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg)
 }
-.arrow-position {
+.arrow--up.arrow::before {
+  display: inline-block;
   right: -15px;
-  top: 4px
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg)
 }
-.margin__info {
+.arrow--down.arrow::before {
+  display: inline-block;
+  right: -15px;
+  top: 5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.margin-top {
+  margin-top: 15px
+}
+.sub-item {
+  margin-bottom: 10px;
+  font-family: Gilroy-Regular,sans-serif,serif;
+  font-weight: 400
+}
+.sub-item__list {
   margin-top: 15px;
   margin-bottom: 15px
 }
-.margin__info li {
-  margin-bottom: 9px
-}
-.margin__name {
-  position: relative;
-  margin-bottom: 10px
-}
-.buy-list li {
-  margin-bottom: 9px
+.description {
+  margin-bottom: 9px;
+  font-family: Gilroy-Regular,sans-serif,serif;
+  font-weight: 400
 }
 .call-list {
   margin-bottom: 64px
 }
 .call-list__number {
+  margin: 0;
   margin-bottom: 6px;
   font-family: Gilroy-Semibold,sans-serif,serif;
   font-size: 20px;
   line-height: 25px
 }
+.call-list__order {
+  margin-top: 0
+}
 .call-list__order a {
+  display: inline-block;
   text-decoration: underline;
   font-family: Raleway,sans-serif;
   font-weight: 600
