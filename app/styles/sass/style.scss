@@ -214,6 +214,8 @@ input[type="radio"].visually-hidden {
 
 .main-nav__list {
   padding-right: 15px;
+  word-break: break-word;
+  box-sizing: border-box;
 }
 
 .main-nav__list a {
@@ -221,6 +223,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-list__item {
+  position: relative;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: #fff;
@@ -228,35 +231,48 @@ input[type="radio"].visually-hidden {
 }
 
 .margin__sub-menu {
-  position: relative;
   margin-top: 15px;
   font-family: "Gilroy-Regular", sans-serif, serif;
   font-weight: 400;
 }
+.arrow {
+  position: absolute;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
 
-.margin__name {
-  &::before {
-    position: absolute;
-    content: "";
-
-    right: -9px;
-    width: 10px;
-    height: 1px;
-    background-color: #fff;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-
-    right: -15px;
-    width: 10px;
-    height: 1px;
-    background-color: #fff;
-    transform: rotate(-45deg);
-  }
+  transform: rotate(45deg);
 }
+
+.arrow-position {
+  right: -15px;
+  top: 4px;
+}
+
+// .arrow {
+//   &::before {
+//     position: absolute;
+//     content: "";
+
+//     right: -9px;
+//     width: 10px;
+//     height: 1px;
+//     background-color: #fff;
+//     transform: rotate(45deg);
+//   }
+
+//   &::after {
+//     position: absolute;
+//     content: "";
+
+//     right: -15px;
+//     width: 10px;
+//     height: 1px;
+//     background-color: #fff;
+//     transform: rotate(-45deg);
+//   }
+// }
 
 .margin__info {
   margin-top: 15px;
@@ -267,6 +283,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 9px;
 }
 .margin__name {
+  position: relative;
   margin-bottom: 10px;
 }
 

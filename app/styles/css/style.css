@@ -182,44 +182,39 @@ input[type=radio].visually-hidden {
   padding-top: 10px
 }
 .main-nav__list {
-  padding-right: 15px
+  padding-right: 15px;
+  word-break: break-word;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 .main-nav__list a {
   color: #fff
 }
 .site-list__item {
+  position: relative;
   font-family: Raleway,sans-serif;
   font-weight: 600;
   color: #fff;
   margin-bottom: 30px
 }
 .margin__sub-menu {
-  position: relative;
   margin-top: 15px;
   font-family: Gilroy-Regular,sans-serif,serif;
   font-weight: 400
 }
-.margin__name::before {
+.arrow {
   position: absolute;
-  content: "";
-  right: -9px;
-  width: 10px;
-  height: 1px;
-  background-color: #fff;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 4px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg)
 }
-.margin__name::after {
-  position: absolute;
-  content: "";
+.arrow-position {
   right: -15px;
-  width: 10px;
-  height: 1px;
-  background-color: #fff;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg)
+  top: 4px
 }
 .margin__info {
   margin-top: 15px;
@@ -229,6 +224,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 9px
 }
 .margin__name {
+  position: relative;
   margin-bottom: 10px
 }
 .buy-list li {
