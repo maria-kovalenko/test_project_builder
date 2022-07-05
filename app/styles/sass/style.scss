@@ -49,10 +49,10 @@ body {
   color: $bg-darkblue;
   background-color: #fff;
   background-image: url(../../../img/header-blur.svg),
-    url(../../../img/clouds.svg), url(../../../img/bg-image.png);
+    url(../../../img/bg-image.png);
 
-  background-position: center 0, center 540px, -427px -130px;
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center 0, -427px -130px;
+  background-repeat: no-repeat, no-repeat;
 }
 
 img {
@@ -70,24 +70,22 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: $bg-darkblue;
-  &:hover {
-  }
 }
 
 .button {
   display: inline-block;
-  width: 126px;
-  height: 126px;
-  padding: 0;
+
+  padding: 15px 19px;
+  vertical-align: middle;
   text-align: center;
-  font-size: 12px;
-  line-height: 15px;
-  font-family: "Montserrat", sans-serif, serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Gilroy-Semibold";
 
   color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  border-radius: 50%;
+  background-color: $bg-lightblue;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -142,7 +140,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-right: 10px;
   line-height: 40px;
-  font-family: "Gilroy-Medium", sans-serif, serif;
+  font-family: "Gilroy-Medium";
 }
 
 .page-header__toggle {
@@ -223,7 +221,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-list__item {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-weight: 600;
   color: #fff;
   margin-bottom: 30px;
@@ -264,7 +262,7 @@ input[type="radio"].visually-hidden {
 
 .sub-item {
   margin-bottom: 10px;
-  font-family: "Gilroy-Regular", sans-serif, serif;
+  font-family: "Gilroy-Regular";
   font-weight: 400;
 }
 
@@ -275,7 +273,7 @@ input[type="radio"].visually-hidden {
 
 .description {
   margin-bottom: 9px;
-  font-family: "Gilroy-Regular", sans-serif, serif;
+  font-family: "Gilroy-Regular";
   font-weight: 400;
 }
 
@@ -286,7 +284,7 @@ input[type="radio"].visually-hidden {
 .call-list__number {
   margin: 0;
   margin-bottom: 6px;
-  font-family: "Gilroy-Semibold", sans-serif, serif;
+  font-family: "Gilroy-Semibold";
   font-size: 20px;
   line-height: 25px;
 }
@@ -296,7 +294,49 @@ input[type="radio"].visually-hidden {
   a {
     display: inline-block;
     text-decoration: underline;
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway";
     font-weight: 600;
   }
+}
+
+// -------------------page-main---------------------------
+.page-main {
+  background-image: url(../../../img/clouds.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.page-main__wrapper {
+  margin-bottom: 152px;
+  text-align: center;
+}
+
+.page-main__title {
+  padding: 0 30px;
+  margin-bottom: 25px;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.title-bold {
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
+.page-main__adress {
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.page-main__metre {
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 19px;
+}
+
+.page-main__button {
+  margin-top: 10px;
 }
