@@ -30,7 +30,7 @@ body {
   color: #212d55;
   background-color: #fff;
   background-image: url(../../../img/header-blur.svg),url(../../../img/bg-image.png);
-  background-position: center 0,-427px 0;
+  background-position: center -100px,-427px 0;
   background-repeat: no-repeat,no-repeat
 }
 img {
@@ -79,9 +79,20 @@ input[type=radio].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden
 }
+@media (min-width:768px) {
+  body {
+    background-image: url(../../../img/header-blur.svg),url(../../../img/bg-image.png);
+    background-position: center -100px,center 0
+  }
+}
 .container {
   width: 90%;
   margin: 0 auto
+}
+@media (min-width:768px) {
+  .container {
+    width: 79%
+  }
 }
 .page-header {
   min-height: 129px;
@@ -106,6 +117,11 @@ input[type=radio].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
+}
+@media (min-width:768px) {
+  .page-header__menu-btn {
+    display: none
+  }
 }
 .page-header__name {
   margin: 0;
@@ -160,40 +176,6 @@ input[type=radio].visually-hidden {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg)
 }
-.mobile-menu {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  text-align: end;
-  background-color: #212d55;
-  color: #fff
-}
-.navigation__list {
-  display: block;
-  margin: 0;
-  padding: 13px 30px 0 30px
-}
-.navigation__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 10px
-}
-.navigation__item {
-  font-family: Raleway;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 30px;
-  cursor: pointer
-}
 .arrow {
   position: relative
 }
@@ -224,36 +206,135 @@ input[type=radio].visually-hidden {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg)
 }
-.sub-navigation {
+@media (min-width:768px) {
+  .arrow.arrow--up.arrow::before {
+    display: none
+  }
+  .arrow.arrow--down::before {
+    display: none
+  }
+}
+.mobile-menu {
   display: block;
-  margin-top: 15px
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: end;
+  background-color: #212d55;
+  color: #fff
+}
+@media (min-width:768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    background-color: transparent
+  }
+}
+.navigation__list {
+  display: block;
+  margin: 0;
+  padding: 0 30px
+}
+@media (min-width:768px) {
+  .navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0
+  }
+}
+.navigation__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10px
+}
+@media (min-width:768px) {
+  .navigation__header {
+    display: none
+  }
+}
+.navigation__item {
+  font-family: Raleway;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer
+}
+@media (min-width:768px) {
+  .navigation__item {
+    margin-right: 32px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #212d55
+  }
 }
 .sub-navigation__item {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-family: Gilroy-Regular;
   font-weight: 400
 }
+@media (min-width:768px) {
+  .sub-navigation {
+    display: none
+  }
+}
 .menu-level-1 {
+  margin-top: 15px
+}
+.menu-paragraph {
+  margin-top: 15px;
   margin-bottom: 15px
 }
-.page-header__contacts {
+.menu-level-2 .sub-navigation__item {
+  margin-bottom: 9px
+}
+.contacts-list {
   padding: 0 30px 64px 30px
 }
-.contacts__number {
+@media (min-width:768px) {
+  .contacts-list {
+    padding: 0
+  }
+}
+.contacts-list__number {
   margin: 0;
   margin-bottom: 6px;
   font-family: Gilroy-Semibold;
   font-size: 20px;
   line-height: 25px
 }
-.contacts__order {
+@media (min-width:768px) {
+  .contacts-list__number {
+    font-size: 18px;
+    line-height: 22px;
+    color: #212d55
+  }
+}
+.contacts-list__order {
   margin: 0
 }
-.contacts__order a {
+.contacts-list__order a {
   display: inline-block;
   text-decoration: underline;
   font-family: Raleway;
   font-weight: 600
+}
+@media (min-width:768px) {
+  .contacts-list__order a {
+    color: #212d55
+  }
 }
 .page-main {
   background-image: url(../../../img/clouds.svg);

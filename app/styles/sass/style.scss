@@ -51,7 +51,7 @@ body {
   background-image: url(../../../img/header-blur.svg),
     url(../../../img/bg-image.png);
 
-  background-position: center 0, -427px 0;
+  background-position: center -100px, -427px 0;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -115,11 +115,27 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+// ----------------header----------------
+
+@media (min-width: $tablet-width) {
+  body {
+    background-image: url(../../../img/header-blur.svg),
+      url(../../../img/bg-image.png);
+
+    background-position: center -100px, center 0;
+  }
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  .container {
+    width: 79%;
+  }
+}
 .page-header {
   // position: sticky;
   min-height: 129px;
@@ -138,10 +154,11 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-// @media (min-width: $tablet-width) {
-//   .page-header__button-wrapper {
-//     display: none;
-//   }
+@media (min-width: $tablet-width) {
+  .page-header__menu-btn {
+    display: none;
+  }
+}
 
 //   .page-header__logo {
 //     margin-right: 50px;
@@ -206,46 +223,6 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.mobile-menu {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  text-align: end;
-  background-color: $bg-darkblue;
-  color: #fff;
-}
-
-.navigation__list {
-  display: block;
-  margin: 0;
-  padding: 13px 30px 0 30px;
-}
-.navigation__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-}
-
-.navigation__item {
-  font-family: "Raleway";
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-// @media (min-width: $tablet-width) {
-//   .site-list__item {
-//     margin-right: 32px;
-//     margin-bottom: 5px;
-//     font-size: 14px;
-//     line-height: 22px;
-//     color: $bg-darkblue;
-//   }
-// }
-
 .arrow {
   position: relative;
 }
@@ -275,26 +252,115 @@ input[type="radio"].visually-hidden {
   transform: rotate(45deg);
 }
 
-.sub-navigation {
+@media (min-width: $tablet-width) {
+  .arrow.arrow--up.arrow::before {
+    display: none;
+  }
+
+  .arrow.arrow--down::before {
+    display: none;
+  }
+}
+
+.mobile-menu {
   display: block;
-  margin-top: 15px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: end;
+  background-color: $bg-darkblue;
+  color: #fff;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-menu {
+    display: flex;
+    position: static;
+
+    background-color: transparent;
+  }
+}
+
+.navigation__list {
+  display: block;
+  margin: 0;
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.navigation__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__header {
+    display: none;
+  }
+}
+
+.navigation__item {
+  font-family: "Raleway";
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+@media (min-width: $tablet-width) {
+  .navigation__item {
+    margin-right: 32px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $bg-darkblue;
+  }
 }
 
 .sub-navigation__item {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-family: "Gilroy-Regular";
   font-weight: 400;
 }
 
+@media (min-width: $tablet-width) {
+  .sub-navigation {
+    display: none;
+  }
+}
+
 .menu-level-1 {
+  margin-top: 15px;
+}
+.menu-paragraph {
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
-.page-header__contacts {
+.menu-level-2 .sub-navigation__item {
+  margin-bottom: 9px;
+}
+
+.contacts-list {
   padding: 0 30px 64px 30px;
 }
 
-.contacts__number {
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    padding: 0;
+  }
+}
+
+.contacts-list__number {
   margin: 0;
   margin-bottom: 6px;
   font-family: "Gilroy-Semibold";
@@ -302,13 +368,27 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
 }
 
-.contacts__order {
+@media (min-width: $tablet-width) {
+  .contacts-list__number {
+    font-size: 18px;
+    line-height: 22px;
+    color: $bg-darkblue;
+  }
+}
+
+.contacts-list__order {
   margin: 0;
   a {
     display: inline-block;
     text-decoration: underline;
     font-family: "Raleway";
     font-weight: 600;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-list__order a {
+    color: $bg-darkblue;
   }
 }
 

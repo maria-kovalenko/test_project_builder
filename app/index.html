@@ -10,14 +10,12 @@
 
   <body>
     <header class="page-header page-header--opened">
-      <div class="page-header__box">
-        <!-- -------------лого и бургер -->
-
-        <div class="page-header__wrapper container">
-          <a href="index.html" class="page-header__logo">
+      <div class="page-header__wrapper container">
+        <div class="page-header__logo">
+          <a href="index.html" class="page-header__logo-image">
             <picture>
               <source
-                media="(min-width: 768px)"
+                media="(min-width: 960px)"
                 srcset="./img/desktop-logo-image.svg"
               />
               <img
@@ -29,19 +27,9 @@
               />
             </picture>
           </a>
-          <div class="page-header__menu-btn">
-            <p class="page-header__name">Меню</p>
-            <button
-              class="page-header__toggle page-header__toggle--closed"
-              type="button"
-            >
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </div>
         </div>
 
-        <!-- -------------навигация -->
-        <div class="mobile-menu" style="display: none">
+        <div class="mobile-menu">
           <div class="navigation__header container">
             <a href="index.html" class="navigation__logo">
               <img
@@ -59,55 +47,252 @@
               <span class="visually-hidden">Закрыть меню</span>
             </button>
           </div>
+
           <nav class="page-header__navigation navigation">
             <ul class="navigation__list">
-              <li class="navigation__item first arrow arrow--up">
+              <li class="navigation__item first arrow arrow--down">
                 Жилые комплексы
                 <ul class="sub-navigation menu-level-1">
                   <div class="menu-paragraph">
                     <li class="sub-navigation__item first arrow arrow--down">
                       ЖК Космос
+                      <ul
+                        class="sub-navigation menu-level-2"
+                        style="display: none"
+                      >
+                        <div class="menu-paragraph">
+                          <li class="sub-navigation__item first">
+                            <a href="#" class="sub-navigation__link"
+                              >Преимущества</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Инфраструктура</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Планировка</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link">Отделка</a>
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Описание</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Контакты</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Документация</a
+                            >
+                          </li>
+                        </div>
+                      </ul>
                     </li>
 
                     <li class="sub-navigation__item arrow arrow--up">
                       ЖК Яблоновский
+                      <ul
+                        class="sub-navigation menu-level-2"
+                        style="display: block"
+                      >
+                        <div class="menu-paragraph">
+                          <li class="sub-navigation__item first">
+                            <a href="#" class="sub-navigation__link"
+                              >Преимущества</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Инфраструктура</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Планировка</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link">Отделка</a>
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Описание</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Контакты</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Документация</a
+                            >
+                          </li>
+                        </div>
+                      </ul>
                     </li>
 
                     <li class="sub-navigation__item arrow arrow--down">
                       ЖК на Шоссейной
+                      <ul
+                        class="sub-navigation menu-level-2"
+                        style="display: none"
+                      >
+                        <div class="menu-paragraph">
+                          <li class="sub-navigation__item first">
+                            <a href="#" class="sub-navigation__link"
+                              >Преимущества</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Инфраструктура</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Планировка</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link">Отделка</a>
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Описание</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Контакты</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Документация</a
+                            >
+                          </li>
+                        </div>
+                      </ul>
                     </li>
 
                     <li class="sub-navigation__item arrow arrow--down">
                       ЖК Солнечная
+                      <ul
+                        class="sub-navigation menu-level-2"
+                        style="display: none"
+                      >
+                        <div class="menu-paragraph">
+                          <li class="sub-navigation__item first">
+                            <a href="#" class="sub-navigation__link"
+                              >Преимущества</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Инфраструктура</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Планировка</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link">Отделка</a>
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Описание</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Контакты</a
+                            >
+                          </li>
+
+                          <li class="sub-navigation__item">
+                            <a href="#" class="sub-navigation__link"
+                              >Документация</a
+                            >
+                          </li>
+                        </div>
+                      </ul>
                     </li>
                   </div>
                 </ul>
+              </li>
+
+              <li class="navigation__item first arrow arrow--down">
+                О компании
               </li>
 
               <li class="navigation__item first arrow arrow--up">
-                О компании
+                Как купить
                 <ul class="sub-navigation menu-level-1">
                   <div class="menu-paragraph">
-                    <li class="sub-navigation__item first arrow arrow--down">
-                      ЖК Космос
-                    </li>
+                    <li class="sub-navigation__item first">Ипотека</li>
 
-                    <li class="sub-navigation__item arrow arrow--up">
-                      ЖК Яблоновский
-                    </li>
+                    <li class="sub-navigation__item">Военная ипотека</li>
 
-                    <li class="sub-navigation__item arrow arrow--down">
-                      ЖК на Шоссейной
-                    </li>
+                    <li class="sub-navigation__item">Материнский капитал</li>
 
-                    <li class="sub-navigation__item arrow arrow--down">
-                      ЖК Солнечная
-                    </li>
+                    <li class="sub-navigation__item">Наличный рассчет</li>
+                    <li class="sub-navigation__item">Рассрочка</li>
                   </div>
                 </ul>
               </li>
+              <li class="navigation__item first">Контакты</li>
             </ul>
           </nav>
+          <div class="contacts-list">
+            <p class="contacts-list__number">+7 (918) 377-48-10</p>
+            <p class="contacts-list__order"><a href="#">Заказать звонок</a></p>
+          </div>
+        </div>
+
+        <div class="page-header__menu-btn">
+          <p class="page-header__name">Меню</p>
+          <button
+            class="page-header__toggle page-header__toggle--closed"
+            type="button"
+          >
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
         </div>
       </div>
     </header>
