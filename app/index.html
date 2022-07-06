@@ -9,223 +9,267 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--opened">
+      <div class="page-header__box">
+        <!-- -------------лого и бургер -->
 
-      <div class="page-header__wrapper container">
-
-        <a href="index.html" class="page-header__logo">
-          <picture>
-          
-            <source media="(min-width: 768px)" srcset="./img/desktop-logo-image.svg">
-          <img
-            class="page-header__logo-image"
-            src="./img/mobile-logo-image.svg"
-            width="148"
-            height="79"
-            alt="Строитель"
-          />
-        </picture>
-        </a>
-
-        <nav class="main-nav">
-
-          <div class="main-nav__wrapper container">
-
-            
+        <div class="page-header__wrapper container">
           <a href="index.html" class="page-header__logo">
-            <img
-              src="./img/open-menu-logo-image.svg"
-              class="page-header__logo-image"
-              width="148"
-              height="79"
-              alt="Строитель"
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/desktop-logo-image.svg"
+              />
+              <img
+                class="page-header__logo-image"
+                src="./img/mobile-logo-image.svg"
+                width="148"
+                height="79"
+                alt="Строитель"
+              />
+            </picture>
           </a>
-          <button class="page-header__toggle page-header__toggle--opened" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
-          </button>
-        </div>
-
-        
-          <ul class="main-nav__list site-list container">
-            <li class="site-list__item arrow arrow--up">
-             
-              Жилые комплексы
-                  <ul class="margin-top">
-                      <li class="site-list__item sub-item arrow arrow--down"> 
-                          ЖК Космос
-                          <ul class="sub-item__list" style="display: none;">
-                            <li class="site-list__item description"><a href="#"> Преимущества</a></li>
-                            <li class="site-list__item description"><a href="#"> Инфраструктура</a></li>
-                            <li class="site-list__item description"><a href="#"> Планировка</a></li>
-                            <li class="site-list__item description"><a href="#"> Отделка</a></li>
-                            <li class="site-list__item description"><a href="#"> Описание</a></li>
-                            <li class="site-list__item description"><a href="#"> Контакты</a></li>
-                            <li class="site-list__item description"><a href="#"> Документация</a></li>
-                          </ul>
-                        </li>
-                        <li class="site-list__item sub-item arrow arrow--down">
-                            ЖК Яблоновский
-                            <ul class="sub-item__list" style="display: none;">
-                              <li class="site-list__item description"><a href="#"> Преимущества</a></li>
-                              <li class="site-list__item description"><a href="#"> Инфраструктура</a></li>
-                              <li class="site-list__item description"><a href="#"> Планировка</a></li>
-                              <li class="site-list__item description"><a href="#"> Отделка</a></li>
-                              <li class="site-list__item description"><a href="#"> Описание</a></li>
-                              <li class="site-list__item description"><a href="#"> Контакты</a></li>
-                              <li class="site-list__item description"><a href="#"> Документация</a></li>
-                            </ul>
-                          </li>
-                          <li class="site-list__item sub-item arrow arrow--down">
-                            ЖК на Шоссейной
-                            <ul class="sub-item__list" style="display: none;">
-                              <li class="site-list__item description"><a href="#"> Преимущества</a></li>
-                              <li class="site-list__item description"><a href="#"> Инфраструктура</a></li>
-                              <li class="site-list__item description"><a href="#"> Планировка</a></li>
-                              <li class="site-list__item description"><a href="#"> Отделка</a></li>
-                              <li class="site-list__item description"><a href="#"> Описание</a></li>
-                              <li class="site-list__item description"><a href="#"> Контакты</a></li>
-                              <li class="site-list__item description"><a href="#"> Документация</a></li>
-                            </ul>
-                          </li>
-                          <li class="site-list__item sub-item arrow arrow--down">
-                            ЖК Солнечная
-                            <ul class="sub-item__list" style="display: none;">
-                              <li class="site-list__item description"><a href="#"> Преимущества</a></li>
-                              <li class="site-list__item description"><a href="#"> Инфраструктура</a></li>
-                              <li class="site-list__item description"><a href="#"> Планировка</a></li>
-                              <li class="site-list__item description"><a href="#"> Отделка</a></li>
-                              <li class="site-list__item description"><a href="#"> Описание</a></li>
-                              <li class="site-list__item description"><a href="#"> Контакты</a></li>
-                              <li class="site-list__item description"><a href="#"> Документация</a></li>
-                            </ul>
-                          </li>
-              </ul>
-            </li>
-            <li class="site-list__item arrow arrow--down">О компании</li>
-            <li class="site-list__item arrow arrow--down">
-              Как купить
-                <ul class="sub-item__list" style="display: none;">
-                  <li class="site-list__item description"><a href="#"> Ипотека</a></li>
-                  <li class="site-list__item description"><a href="#">  Военная ипотека</a></li>
-                  <li class="site-list__item description"><a href="#">  Материнский капитал</a></li>
-                  <li class="site-list__item description"><a href="#"> Наличный рассчет</a></li>
-                  <li class="site-list__item description"><a href="#"> Рассрочка</a></li>
-                </ul>
-            </li>
-            <li class="site-list__item arrow">Контакты</li>
-            
-          </ul>
-
-
-          <div class="main-nav__list call-list container">
-            <p class="call-list__number">
-             +7 (918) 377-48-10
-            </p>
-            <p class="call-list__order"><a href="#">Заказать звонок</a></p>
+          <div class="page-header__menu-btn">
+            <p class="page-header__name">Меню</p>
+            <button
+              class="page-header__toggle page-header__toggle--closed"
+              type="button"
+            >
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
           </div>
-        </nav>
-
-        <div class="page-header__button-wrapper">
-          <p class="page-header__name">Меню</p>
-          <button class="page-header__toggle page-header__toggle--closed" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
         </div>
 
+        <!-- -------------навигация -->
+        <div class="mobile-menu" style="display: none">
+          <div class="navigation__header container">
+            <a href="index.html" class="navigation__logo">
+              <img
+                src="./img/open-menu-logo-image.svg"
+                class="page-header__logo-image"
+                width="148"
+                height="79"
+                alt="Строитель"
+              />
+            </a>
+            <button
+              class="page-header__toggle page-header__toggle--opened"
+              type="button"
+            >
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+          </div>
+          <nav class="page-header__navigation navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item first arrow arrow--up">
+                Жилые комплексы
+                <ul class="sub-navigation menu-level-1">
+                  <div class="menu-paragraph">
+                    <li class="sub-navigation__item first arrow arrow--down">
+                      ЖК Космос
+                    </li>
+
+                    <li class="sub-navigation__item arrow arrow--up">
+                      ЖК Яблоновский
+                    </li>
+
+                    <li class="sub-navigation__item arrow arrow--down">
+                      ЖК на Шоссейной
+                    </li>
+
+                    <li class="sub-navigation__item arrow arrow--down">
+                      ЖК Солнечная
+                    </li>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="navigation__item first arrow arrow--up">
+                О компании
+                <ul class="sub-navigation menu-level-1">
+                  <div class="menu-paragraph">
+                    <li class="sub-navigation__item first arrow arrow--down">
+                      ЖК Космос
+                    </li>
+
+                    <li class="sub-navigation__item arrow arrow--up">
+                      ЖК Яблоновский
+                    </li>
+
+                    <li class="sub-navigation__item arrow arrow--down">
+                      ЖК на Шоссейной
+                    </li>
+
+                    <li class="sub-navigation__item arrow arrow--down">
+                      ЖК Солнечная
+                    </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
+    <!-- <style>
+ @media (min-width: 768px) {
+
+  .page-header__menu-btn {
+    display: none;
+  }
+
+  .navigation__header {
+    display: none;
+  }
+    .navigation__item .sub-navigation{
+    display: none;
+  }
+
+  .arrow--up.arrow::before,
+  .arrow--down.arrow::before {
+    display: none;
+  }
+
+.mobile-menu {
+  background-color: transparent;
+}
+
+.navigation__item {
+  color: #212d55;
+}
+
+/* .navigation__list {
+  display: flex;
+padding: 0; 
+}*/
+}
+
+.page-header__wrapper{
+  display: block;
+}
+
+.mobile-menu {
+
+    position: static;
+}
+
+.page-header__box {
+  display: flex;
+}
+</style> -->
+
     <main class="page-main">
-      <div class="page-main__wrapper ">
-        <p class="page-main__title">Жилой Комплекс <span class="title-bold">«Яблоновский»</span></p>
-        <p class="page-main__adress">Краснодар,<br> пгт. Яблоновский ул. Кобцевой</p>
+      <div class="page-main__wrapper">
+        <p class="page-main__title">
+          Жилой Комплекс <span class="title-bold">«Яблоновский»</span>
+        </p>
+        <p class="page-main__adress">
+          Краснодар,<br />
+          пгт. Яблоновский ул. Кобцевой
+        </p>
         <p class="page-main__metre">от 63 801 до 65 678 ₽/м²</p>
 
-        <button class="page-main__button button" type="button">Узнать стоимость проекта</button>
+        <button class="page-main__button button" type="button">
+          Узнать стоимость проекта
+        </button>
       </div>
 
+      <section class="description-complex slider">
+        <h1 class="description-complex__title container">
+          Описание Жилого Комплекса
+        </h1>
 
-     
+        <div class="slider-container">
+          <div class="slider__btn btn container">
+            <!-- <input type="button" name="parking" placeholder="Парковка" />
+        <input type="button" name="security" placeholder="Охрана" />
+        <input type="button" name="architecture" placeholder="Архитектура" />
+        <input type="button" name="territory" placeholder="Территория" /> -->
 
-      <section class="description-complex">
-        <h1 class="description-complex__title">Описание Жилого Комплекса</h1>
-
-        <div class="description-complex__button">
-          <input type="button" name="parking" placeholder="Парковка" />
-          <input type="button" name="security" placeholder="Охрана" />
-          <input type="button" name="architecture" placeholder="Архитектура" />
-          <input type="button" name="territory" placeholder="Территория" />
-        </div>
-
-          <div class="description-complex__image">
-            <h2>Территория</h2>
-            <p>
-              Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
-              пгт. Яблоновский. За пять минут пешком можно дойти до
-              муниципальной поликлиники, школы и детского садика.
-            </p>
-            <p>
-              Этот жилой комплекс располагается в непосредственной близости от
-              улицы Гагарина, где проходит абсолютное большинство маршрутов
-              общественного транспорта, соответственно легко добраться во все
-              части поселка и города Краснодар. Тут же располагается магазин
-              «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные
-              магазины, аптеки и другие предприятия сферы услуг.
-            </p>
+            <button class="btn__name" type="button">Парковка</button>
+            <button class="btn__name" type="button">Охрана</button>
+            <button class="btn__name" type="button">Архитектура</button>
+            <button class="btn__name" type="button">Территория</button>
           </div>
 
-          <div>
-            <h2>Парковка</h2>
-            <p>
-              Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
-              пгт. Яблоновский. За пять минут пешком можно дойти до
-              муниципальной поликлиники, школы и детского садика.
-            </p>
-            <p>
-              Этот жилой комплекс располагается в непосредственной близости от
-              улицы Гагарина, где проходит абсолютное большинство маршрутов
-              общественного транспорта, соответственно легко добраться во все
-              части поселка и города Краснодар. Тут же располагается магазин
-              «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные
-              магазины, аптеки и другие предприятия сферы услуг.
-            </p>
-          </div>
+          <div class="slider__wrapper">
+            <div class="slider__big">
+              <div class="slider-slide slide-big container">
+                <h2 class="slider__title">Территория</h2>
+                <p class="slider__description">
+                  Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
+                  пгт. Яблоновский. За пять минут пешком можно дойти до
+                  муниципальной поликлиники, школы и детского садика.
+                </p>
+                <p class="slider__description">
+                  Этот жилой комплекс располагается в непосредственной близости
+                  от улицы Гагарина, где проходит абсолютное большинство
+                  маршрутов общественного транспорта, соответственно легко
+                  добраться во все части поселка и города Краснодар. Тут же
+                  располагается магазин «Магнит», «Магнит Косметик», МФЦ,
+                  овощной рынок, мебельные магазины, аптеки и другие предприятия
+                  сферы услуг.
+                </p>
+              </div>
+            </div>
 
-          <div>
-            <h2>Архитектура</h2>
-            <p>
-              Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
-              пгт. Яблоновский. За пять минут пешком можно дойти до
-              муниципальной поликлиники, школы и детского садика.
-            </p>
-            <p>
-              Этот жилой комплекс располагается в непосредственной близости от
-              улицы Гагарина, где проходит абсолютное большинство маршрутов
-              общественного транспорта, соответственно легко добраться во все
-              части поселка и города Краснодар. Тут же располагается магазин
-              «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные
-              магазины, аптеки и другие предприятия сферы услуг.
-            </p>
-          </div>
+            <div class="slider__little container">
+              <div class="slider-slide slide-little parking">
+                <h2 class="slider__title">Парковка</h2>
+                <p class="slider__description">
+                  Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
+                  пгт. Яблоновский. За пять минут пешком можно дойти до
+                  муниципальной поликлиники, школы и детского садика.
+                </p>
+                <p class="slider__description">
+                  Этот жилой комплекс располагается в непосредственной близости
+                  от улицы Гагарина, где проходит абсолютное большинство
+                  маршрутов общественного транспорта, соответственно легко
+                  добраться во все части поселка и города Краснодар. Тут же
+                  располагается магазин «Магнит», «Магнит Косметик», МФЦ,
+                  овощной рынок, мебельные магазины, аптеки и другие предприятия
+                  сферы услуг.
+                </p>
+              </div>
 
-          <div>
-            <h2>Охрана</h2>
-            <p>
-              Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
-              пгт. Яблоновский. За пять минут пешком можно дойти до
-              муниципальной поликлиники, школы и детского садика.
-            </p>
-            <p>
-              Этот жилой комплекс располагается в непосредственной близости от
-              улицы Гагарина, где проходит абсолютное большинство маршрутов
-              общественного транспорта, соответственно легко добраться во все
-              части поселка и города Краснодар. Тут же располагается магазин
-              «Магнит», «Магнит Косметик», МФЦ, овощной рынок, мебельные
-              магазины, аптеки и другие предприятия сферы услуг.
-            </p>
+              <div class="slider-slide slide-little architecture">
+                <h2 class="slider__title">Архитектура</h2>
+                <p class="slider__description">
+                  Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
+                  пгт. Яблоновский. За пять минут пешком можно дойти до
+                  муниципальной поликлиники, школы и детского садика.
+                </p>
+                <p class="slider__description">
+                  Этот жилой комплекс располагается в непосредственной близости
+                  от улицы Гагарина, где проходит абсолютное большинство
+                  маршрутов общественного транспорта, соответственно легко
+                  добраться во все части поселка и города Краснодар. Тут же
+                  располагается магазин «Магнит», «Магнит Косметик», МФЦ,
+                  овощной рынок, мебельные магазины, аптеки и другие предприятия
+                  сферы услуг.
+                </p>
+              </div>
+
+              <div class="slider-slide slide-little security">
+                <h2 class="slider__title">Охрана</h2>
+                <p class="slider__description">
+                  Жилой комплекс "Яблоновский" расположен на ул. Кобцевой Н.С. в
+                  пгт. Яблоновский. За пять минут пешком можно дойти до
+                  муниципальной поликлиники, школы и детского садика.
+                </p>
+                <p class="slider__description">
+                  Этот жилой комплекс располагается в непосредственной близости
+                  от улицы Гагарина, где проходит абсолютное большинство
+                  маршрутов общественного транспорта, соответственно легко
+                  добраться во все части поселка и города Краснодар. Тут же
+                  располагается магазин «Магнит», «Магнит Косметик», МФЦ,
+                  овощной рынок, мебельные магазины, аптеки и другие предприятия
+                  сферы услуг.
+                </p>
+              </div>
+            </div>
           </div>
-          
         </div>
       </section>
     </main>
