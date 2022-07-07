@@ -354,15 +354,34 @@ input[type=radio].visually-hidden {
   background-repeat: no-repeat;
   background-position: -420px 433px
 }
+@media (min-width:768px) {
+  .page-main {
+    background-image: none
+  }
+}
 .page-main__wrapper {
   margin-bottom: 437px;
   text-align: center
 }
+@media (min-width:768px) {
+  .page-main__wrapper {
+    margin-bottom: 360px
+  }
+}
 .page-main__title {
   padding: 0 30px;
+  margin: 0;
   margin-bottom: 25px;
   font-size: 28px;
   line-height: 40px
+}
+@media (min-width:768px) {
+  .page-main__title {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 50px
+  }
 }
 .title-bold {
   font-family: Raleway;
@@ -374,10 +393,22 @@ input[type=radio].visually-hidden {
   font-size: 20px;
   line-height: 24px
 }
+@media (min-width:768px) {
+  .page-main__adress {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 24px
+  }
+  .page-main__adress br {
+    display: none
+  }
+}
 .page-main__metre {
   font-family: Gilroy-Bold;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
   margin-bottom: 19px
 }
 .page-main__button {
