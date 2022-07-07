@@ -424,13 +424,54 @@ input[type=radio].visually-hidden {
   text-align: center;
   font-family: Gilroy-Bold
 }
-.btn__name {
-  border: none;
-  width: 100%;
-  height: 51px;
-  margin-bottom: 20px;
-  padding: 0;
+.slider__btn {
   text-align: center
+}
+.btn__text {
+  position: relative;
+  font-family: Gilroy-Semibold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #212d55
+}
+.btn__name {
+  position: relative;
+  display: inline-block;
+  padding: 25px 80px;
+  width: 290px;
+  min-height: 71px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+  background: #f9fcfd;
+  -webkit-box-shadow: 0 5px 15px rgba(33,45,85,.2);
+  box-shadow: 0 5px 15px rgba(33,45,85,.2);
+  border-radius: 10px
+}
+.btn__name::before {
+  position: absolute;
+  content: "";
+  width: 270px;
+  min-height: 51px;
+  left: calc(50% - 135px);
+  top: calc(50% - 25.5px);
+  z-index: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 19px rgba(33,45,85,.06);
+  box-shadow: 0 5px 19px rgba(33,45,85,.06);
+  border-radius: 10px
+}
+.btn__name::after {
+  content: "";
+  position: absolute;
+  width: 16.79px;
+  height: 15px;
+  right: calc(100% - 19px);
+  top: calc(50% - 7.5px);
+  border-radius: 50%;
+  background: #f9fcfd;
+  -webkit-box-shadow: inset -4px 0 5px 0 rgba(33,45,85,.05);
+  box-shadow: inset -4px 0 5px 0 rgba(33,45,85,.05)
 }
 .slider__btn {
   margin-bottom: 47px

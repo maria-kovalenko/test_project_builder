@@ -495,21 +495,70 @@ input[type="radio"].visually-hidden {
   font-family: "Gilroy-Bold";
 }
 
-.btn__name {
-  border: none;
-  width: 100%;
-  // width: 270px;
-  height: 51px;
-  margin-bottom: 20px;
-  padding: 0;
-  //   padding: 25px 111px;
+.slider__btn {
   text-align: center;
-
-  // background-image: url(../../../img/btn-toggle.svg);
-  // background-repeat: no-repeat;
-  // background-position: 0 0;
-  // background-size: contain;
 }
+
+.btn__text {
+  position: relative;
+  font-family: "Gilroy-Semibold";
+  font-size: 18px;
+  line-height: 22px;
+  color: $bg-darkblue;
+}
+.btn__name {
+  position: relative;
+  display: inline-block;
+  padding: 25px 80px;
+  width: 290px;
+  min-height: 71px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+  background: #f9fcfd;
+  box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+  border-radius: 10px;
+}
+
+.btn__name::before {
+  position: absolute;
+  content: "";
+  width: 270px;
+  min-height: 51px;
+  left: calc(50% - 135px);
+  top: calc(50% - 25.5px);
+  z-index: 0;
+  background: #ffffff;
+  box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
+  border-radius: 10px;
+}
+
+.btn__name::after {
+  content: "";
+  position: absolute;
+  width: 16.79px;
+  height: 15px;
+  right: calc(100% - 19px);
+  top: calc(50% - 7.5px);
+
+  border-radius: 50%;
+  background: #f9fcfd;
+  box-shadow: inset -4px 0px 5px 0 rgb(33 45 85 / 5%);
+}
+
+// .btn__name::after {
+//   content: "";
+
+//   position: absolute;
+//   width: 290px;
+//   height: 71px;
+//   left: -10px;
+//   top: -13px;
+//   z-index: -1;
+//   background: #f9fcfd;
+//   box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+//   border-radius: 10px;
+// }
 
 .slider__btn {
   margin-bottom: 47px;
@@ -536,12 +585,8 @@ input[type="radio"].visually-hidden {
 
 .slide-big {
   position: absolute;
-
   bottom: 29px;
   left: 17px;
-  // width: 290px;
-  // height: 266px;
-
   overflow-y: scroll;
 }
 
@@ -572,9 +617,6 @@ input[type="radio"].visually-hidden {
   height: 91px;
   margin: 0;
   margin-right: 10px;
-  // background-image: url(../../../img/terrytory.png);
-  // background-repeat: no-repeat;
-  // background-position: -170px -183px;
   border-radius: 10px;
 
   &:last-child {
