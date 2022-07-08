@@ -70,6 +70,10 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #fff;
+
+  &:hover {
+    color: $bg-lightblue;
+  }
 }
 
 .button {
@@ -338,10 +342,6 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.sub-navigation {
-  display: none;
-}
-
 .sub-navigation__item {
   margin-bottom: 10px;
   font-family: "Gilroy-Regular";
@@ -349,6 +349,9 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $tablet-width) {
+  .sub-navigation {
+    display: none;
+  }
   .sub-navigation__link {
     color: $bg-darkblue;
   }
@@ -382,10 +385,6 @@ input[type="radio"].visually-hidden {
     z-index: 1;
   }
 
-  .menu-level-2 {
-    display: none;
-  }
-
   .menu-paragraph {
     margin: 0;
   }
@@ -397,19 +396,19 @@ input[type="radio"].visually-hidden {
   }
 }
 
-// .open-sub-menu
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: 75%;
-//     width: 100%;
-//     margin: 0;
-//     padding: 20px;
-//     background-color: #fff;
-//     text-align: left;
-//     box-shadow: 0 10px 28px rgb(0 0 0 / 20%);
-/* transform: translateX(-50%) translateY(0); */
-// z-index: 1;
+.open-sub-sub-menu {
+  display: block;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
 
 .mobile-menu__contacts {
   padding: 0 30px 64px 30px;
