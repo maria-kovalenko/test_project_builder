@@ -37,6 +37,7 @@ $bg-gray: #656d89;
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$desktop-fourteen-width: 1400px;
 
 body {
   min-width: 320px;
@@ -99,12 +100,6 @@ button {
   cursor: pointer;
 }
 
-// .button:hover,
-// .button:focus,
-// .button:active {
-//   background-color: b;
-// }
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -139,11 +134,11 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-// @media (min-width: $tablet-width) {
-//   .container {
-//     width: 79%;
-//   }
-// }
+@media (min-width: $desktop-fourteen-width) {
+  .container {
+    width: 79%;
+  }
+}
 .page-header {
   min-height: 129px;
   margin-bottom: 114px;
@@ -166,13 +161,6 @@ input[type="radio"].visually-hidden {
     display: none;
   }
 }
-
-//   .page-header__logo {
-//     margin-right: 50px;
-//     width: 192;
-//     height: 94;
-//   }
-// }
 
 .page-header__name {
   margin: 0;
@@ -284,7 +272,8 @@ input[type="radio"].visually-hidden {
 @media (min-width: $tablet-width) {
   .page-header__mobile-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
+    align-items: center;
     position: static;
     width: 70%;
     background-color: transparent;
@@ -336,10 +325,24 @@ input[type="radio"].visually-hidden {
     line-height: 22px;
     color: $bg-darkblue;
 
+    &:last-child {
+      margin-right: 0;
+    }
+
     &:hover {
       color: $bg-lightblue;
     }
   }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .navigation__item {
+    font-size: 18px;
+  }
+}
+
+.sub-navigation {
+  display: none;
 }
 
 .sub-navigation__item {
@@ -349,9 +352,6 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $tablet-width) {
-  .sub-navigation {
-    display: none;
-  }
   .sub-navigation__link {
     color: $bg-darkblue;
   }
@@ -375,7 +375,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 150%;
     left: 50%;
-    width: 150px;
+    min-width: 100%;
     margin: 0;
     padding: 20px;
     background-color: #fff;
@@ -419,8 +419,16 @@ input[type="radio"].visually-hidden {
     flex-shrink: 0;
     padding: 0;
     word-break: break-all;
+    margin-left: 54px;
   }
 }
+
+// @media (min-width: $desktop-width) {
+//   .mobile-menu__contacts {
+//   margin-left: 54px;
+
+//   }
+// }
 
 .contacts__number {
   margin: 0;
@@ -435,6 +443,13 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 20px;
     color: $bg-darkblue;
+  }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .contacts__number {
+    font-size: 20px;
+    line-height: 25px;
   }
 }
 
@@ -453,6 +468,13 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 20px;
     color: $bg-darkblue;
+  }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .contacts__order a {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
