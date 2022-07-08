@@ -335,8 +335,8 @@ input[type=radio].visually-hidden {
   margin-bottom: 9px
 }
 @media (min-width:768px) {
-  .open-sub-menu {
-    display: block;
+  .menu-level-1 {
+    display: none;
     position: absolute;
     top: 150%;
     left: 50%;
@@ -358,20 +358,23 @@ input[type=radio].visually-hidden {
   .sub-navigation__item:last-child {
     margin: 0
   }
+  .menu-level-2 {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    text-align: left;
+    -webkit-box-shadow: 0 10px 28px rgba(0,0,0,.2);
+    box-shadow: 0 10px 28px rgba(0,0,0,.2);
+    z-index: 1
+  }
 }
-.open-sub-sub-menu {
-  display: block;
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  width: 100%;
-  margin: 0;
-  padding: 20px;
-  background-color: #fff;
-  text-align: left;
-  -webkit-box-shadow: 0 10px 28px rgba(0,0,0,.2);
-  box-shadow: 0 10px 28px rgba(0,0,0,.2);
-  z-index: 1
+.open {
+  display: block
 }
 .mobile-menu__contacts {
   padding: 0 30px 64px 30px
