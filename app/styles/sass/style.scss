@@ -126,6 +126,7 @@ input[type="radio"].visually-hidden {
       url(../../../img/bg-image.png);
 
     background-position: center -100px, 100% 0;
+    background-size: auto, contain;
   }
 }
 
@@ -328,10 +329,10 @@ input[type="radio"].visually-hidden {
     &:last-child {
       margin-right: 0;
     }
+  }
 
-    &:hover {
-      color: $bg-lightblue;
-    }
+  .hover-link:hover {
+    color: $bg-lightblue;
   }
 }
 
@@ -465,6 +466,10 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 20px;
     color: $bg-darkblue;
+
+    &:hover {
+      color: $bg-lightblue;
+    }
   }
 }
 
@@ -511,8 +516,23 @@ input[type="radio"].visually-hidden {
   .page-main__title {
     padding: 0;
     margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
     font-size: 35px;
     line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .page-main__title {
+    margin-bottom: 28px;
+    font-size: 60px;
+    line-height: 70px;
   }
 }
 
@@ -530,14 +550,18 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-width) {
   .page-main__adress {
-    margin: 0;
-    margin-bottom: 15px;
-    font-size: 20px;
-    line-height: 24px;
-
+    margin-bottom: 10px;
     br {
       display: none;
     }
+  }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .page-main__adress {
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -547,6 +571,22 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   margin: 0;
   margin-bottom: 19px;
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__metre {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .page-main__metre {
+    font-size: 35px;
+    line-height: 70px;
+
+    margin-bottom: 25px;
+  }
 }
 
 .page-main__button {
