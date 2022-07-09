@@ -67,6 +67,11 @@ a:hover {
   box-shadow: 0 6px 0 0 #2cabdc;
   cursor: pointer
 }
+.button:hover {
+  background-color: #2cabdc;
+  -webkit-box-shadow: 0 6px 0 0 #2598c3;
+  box-shadow: 0 6px 0 0 #2598c3
+}
 button {
   cursor: pointer
 }
@@ -638,9 +643,27 @@ input[type=radio].visually-hidden {
   }
 }
 .slider {
-  width: 1140px;
+  width: 848px;
   height: 573px
 }
-.slider__image-wrapper {
-  text-align: center
+.slider__slide {
+  border-radius: 10px
+}
+.slider__image {
+  text-align: left
+}
+.slider__image img {
+  border-radius: 10px
+}
+.slider-mini__image {
+  position: relative
+}
+.slider-mini__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover
 }
