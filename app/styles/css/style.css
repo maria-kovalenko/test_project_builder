@@ -642,12 +642,17 @@ input[type=radio].visually-hidden {
     right: calc(100% - 22px)
   }
 }
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.wrapper-right {
+  margin-left: 30px
+}
 .slider {
   width: 848px;
   height: 573px
-}
-.slider__slide {
-  border-radius: 10px
 }
 .slider__image {
   text-align: left
@@ -655,15 +660,14 @@ input[type=radio].visually-hidden {
 .slider__image img {
   border-radius: 10px
 }
-.slider-mini__image {
-  position: relative
+.slider-mini {
+  width: 262px;
+  height: 573px
+}
+.slider-mini__slide {
+  width: 262px;
+  height: 171px
 }
 .slider-mini__image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-  object-fit: cover
+  border-radius: 10px
 }

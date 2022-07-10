@@ -4,11 +4,11 @@ const swiper = new Swiper(".slider", {
     prevEl: ".swiper-button-prev",
   },
 
-
-
   slideToClickedSlide: true,
 
   slidesPerView: 1,
+  loop: true,
+  loopedSlice: 1,
 
   // spaceBetween: 30,
 
@@ -34,4 +34,15 @@ const swiper = new Swiper(".slider", {
   //     slidesPerView: 3,
   //   },
   // },
+
+  thumbs: {
+    swiper: {
+      el: ".slider-mini",
+      slidesPerView: 3,
+      spaceBetween: 30,
+      direction: "vertical",
+      loop: true,
+      loopedSlice: 3,
+    },
+  },
 });
