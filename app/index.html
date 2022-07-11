@@ -293,8 +293,8 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <div class="page-main__wrapper container">
+    <main class="page-main container">
+      <div class="page-main__wrapper">
         <p class="page-main__title">
           Жилой Комплекс <span class="title-bold">«Яблоновский»</span>
         </p>
@@ -309,16 +309,60 @@
         </button>
       </div>
 
-      <section class="description-complex container">
+      <section class="description-complex">
         <h1 class="description-complex__title">Описание Жилого Комплекса</h1>
 
-        <div class="slider__btn btn">
-          <!-- <input type="button" name="parking" placeholder="Парковка" />
+        <div class="swiper">
+          <div class="slider">
+            <div class="slider-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/terrytory.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/parking.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/architecture.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/security.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-nav">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/terrytory.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/parking.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/architecture.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/security.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+<!-- <div class="slider-btn btn"> -->
+<!-- <input type="button" name="parking" placeholder="Парковка" />
         <input type="button" name="security" placeholder="Охрана" />
         <input type="button" name="architecture" placeholder="Архитектура" />
         <input type="button" name="territory" placeholder="Территория" /> -->
 
-          <button class="btn__name" type="button">
+<!-- <button class="btn__name" type="button">
             <span class="btn__text">Парковка</span>
           </button>
           <button class="btn__name" type="button">
@@ -330,85 +374,4 @@
           <button class="btn__name" type="button">
             <span class="btn__text">Территория</span>
           </button>
-        </div>
-
-        <div class="wrapper">
-          <div class="wrapper-left">
-            <!-- Slider main container -->
-            <div class="slider swiper">
-              <!-- Additional required wrapper -->
-              <div class="slider__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div class="slider__slide swiper-slide">
-                  <div class="slider__image">
-                    <img src="./img/terrytory.png" alt="Картинка 1" />
-                  </div>
-                </div>
-
-                <div class="slider__slide swiper-slide">
-                  <div class="slider__image">
-                    <img src="./img/parking.png" alt="Картинка 2" />
-                  </div>
-                </div>
-
-                <div class="slider__slide swiper-slide">
-                  <div class="slider__image">
-                    <img src="./img/architecture.png" alt="Картинка 3" />
-                  </div>
-                </div>
-
-                <div class="slider__slide swiper-slide">
-                  <div class="slider__image">
-                    <img src="./img/security.png" alt="Картинка 4" />
-                  </div>
-                </div>
-              </div>
-              <!-- navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-
-          <div class="wrapper-right">
-            <div class="slider-mini swiper">
-              <!-- Additional required wrapper -->
-              <div class="slider-mini__wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div class="slider-mini__slide swiper-slide">
-                  <div class="slider-mini__image">
-                    <img src="./img/terrytory.png" alt="Картинка 1" />
-                  </div>
-                </div>
-
-                <div class="slider-mini__slide swiper-slide">
-                  <div class="slider-mini__image">
-                    <img src="./img/parking.png" alt="Картинка 2" />
-                  </div>
-                </div>
-
-                <div class="slider-mini__slide swiper-slide">
-                  <div class="slider-mini__image">
-                    <img src="./img/architecture.png" alt="Картинка 3" />
-                  </div>
-                </div>
-
-                <div class="slider-mini__slide swiper-slide">
-                  <div class="slider-mini__image">
-                    <img src="./img/security.png" alt="Картинка 4" />
-                  </div>
-                </div>
-              </div>
-              <!-- navigation buttons -->
-              <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
-              <!-- pagination -->
-              <!-- <div class="swiper-pagination"></div> -->
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
-</html>
+        </div> -->

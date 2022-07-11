@@ -643,45 +643,44 @@ input[type=radio].visually-hidden {
     right: calc(100% - 22px)
   }
 }
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
+.swiper {
+  width: 90%
 }
-.wrapper-right {
-  margin-left: 30px
+.card img {
+  width: 100%
 }
 .slider {
-  width: 848px;
-  height: 573px
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
 }
-.slider__image {
-  width: 100%;
-  height: 100%
+.slider-main {
+  width: auto;
+  height: 573px;
+  overflow: hidden
 }
-.slider__image img {
+.slider-nav {
+  width: 262px;
+  margin-left: 30px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 573px;
+  overflow: hidden
+}
+.slider-nav .swiper-slide {
+  width: 262px;
+  height: 171px
+}
+.slider-nav .swiper-slide img {
+  max-height: 100%
+}
+.swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 10px
-}
-.slider-mini {
-  width: 262px;
-  height: 573px
-}
-.slider-mini__slide {
-  width: 262px;
-  height: 171px
-}
-.slider-mini__image {
-  width: 100%;
-  height: 100%
-}
-.slider-mini__image img {
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover
 }
