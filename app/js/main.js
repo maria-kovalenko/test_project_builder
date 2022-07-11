@@ -19,3 +19,16 @@ let swiperMain = new Swiper(sliderMain, {
     swiper: swiperNav,
   },
 });
+
+document.querySelector(".parking").addEventListener("click", () => {
+  swiperMain.slideTo(1);
+});
+document.querySelector(".security").addEventListener("click", () => {
+  swiperMain.slideTo(3);
+});
+document.querySelector(".architecture").addEventListener("click", () => {
+  swiperMain.slideTo(2);
+});
+document.querySelector(".territory").addEventListener("click", () => {
+  swiperMain.slideTo(0);
+});

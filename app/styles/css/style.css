@@ -646,6 +646,9 @@ input[type=radio].visually-hidden {
 .swiper {
   width: 90%
 }
+.swiper__button {
+  padding: 10px
+}
 .card img {
   width: 100%
 }
