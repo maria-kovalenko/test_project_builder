@@ -1,5 +1,6 @@
 const sliderMain = document.querySelector(".slider-main");
 const sliderNav = document.querySelector(".slider-nav");
+const sliderText = document.querySelector(".slider-text");
 
 let swiperNav = new Swiper(sliderNav, {
   slidesPerView: "auto",
@@ -46,4 +47,9 @@ document.querySelector(".architecture").addEventListener("click", () => {
 });
 document.querySelector(".territory").addEventListener("click", () => {
   swiperMain.slideTo(0);
+});
+
+let swiperText = new Swiper(sliderText, {
+  direction: "vertical",
+  loop: true,
 });
