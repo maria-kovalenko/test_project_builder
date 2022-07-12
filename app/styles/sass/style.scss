@@ -531,7 +531,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-width: $tablet-middle) {
+@media (min-width: $tablet-width) {
   .page-main__wrapper {
     margin-bottom: 360px;
   }
