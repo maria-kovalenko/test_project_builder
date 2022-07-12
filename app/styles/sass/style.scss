@@ -36,6 +36,8 @@ $bg-gray: #656d89;
 
 $mobile-width: 320px;
 $tablet-width: 768px;
+$tablet-middle: 1024px;
+
 $desktop-width: 1200px;
 $desktop-fourteen-width: 1400px;
 
@@ -140,7 +142,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-@media (min-width: $desktop-fourteen-width) {
+@media (min-width: $desktop-width) {
   .container {
     width: 79%;
   }
@@ -612,6 +614,14 @@ input[type="radio"].visually-hidden {
   font-family: "Gilroy-Bold";
 }
 
+@media (min-width: $tablet-width) {
+  .description-complex__title {
+    
+    font-size: 35px;
+    
+  }
+}
+
 @media (min-width: $desktop-fourteen-width) {
   .description-complex__title {
     margin-bottom: 60px;
@@ -626,16 +636,24 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .swiper__button {
+    width: 90%;
+    margin: 0 auto;
     margin-bottom: 40px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-start;
+  }
+}
+@media (min-width: $tablet-middle) {
+  .swiper__button {
+    width: 100%;
   }
 }
 
@@ -745,35 +763,79 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-.card img {
-  width: 100%;
+@media (min-width: $tablet-middle) {
+  .swiper {
+    width: 79%;
+  }
 }
 
 .slider {
+  height: 573px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-middle) {
+  .slider {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
 }
 
 .slider-main {
-  width: auto;
-  height: 573px;
+  width: 100%;
+  height: 368px;
+  margin-bottom: 20px;
   overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-main {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-middle) {
+  .slider-main {
+    width: 848px;
+    height: 573px;
+    margin: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
 }
 
 .slider-nav {
-  width: 262px;
-  margin-left: 30px;
   flex-shrink: 0;
-  height: 573px;
+  height: 91px;
   overflow: hidden;
 }
 
+@media (min-width: $tablet-middle) {
+  .slider-nav {
+    margin: 0;
+    margin-left: 30px;
+    width: 100%;
+    height: 573px;
+    width: 262px;
+  }
+}
+
 .slider-nav .swiper-slide {
-  width: 262px;
-  height: 171px;
+  width: 140px;
+  height: 91px;
 
   img {
     max-height: 100%;
+  }
+}
+
+@media (min-width: $tablet-middle) {
+  .slider-nav .swiper-slide {
+    width: 100%;
   }
 }
 
