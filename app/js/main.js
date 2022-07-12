@@ -36,20 +36,48 @@ let swiperMain = new Swiper(sliderMain, {
   },
 });
 
-document.querySelector(".parking").addEventListener("click", () => {
-  swiperMain.slideTo(1);
-});
-document.querySelector(".security").addEventListener("click", () => {
-  swiperMain.slideTo(3);
-});
-document.querySelector(".architecture").addEventListener("click", () => {
-  swiperMain.slideTo(2);
-});
-document.querySelector(".territory").addEventListener("click", () => {
-  swiperMain.slideTo(0);
+let swiperText = new Swiper(sliderText, {
+  slidesPerView: "auto",
+  direction: "vertical",
+
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  // scrollbar: {
+  //   el: ".swiper-scrollbar",
+  // },
+  // mousewheel: true,
 });
 
-let swiperText = new Swiper(sliderText, {
-  direction: "vertical",
-  loop: true,
+document.querySelector(".btn-parking").addEventListener("click", () => {
+  swiperMain.slideTo(1);
+  swiperText.slideTo(1);
+  swiperNav.hideSlide(1);
+});
+document.querySelector(".btn-security").addEventListener("click", () => {
+  swiperMain.slideTo(3);
+  swiperText.slideTo(3);
+});
+document.querySelector(".btn-architecture").addEventListener("click", () => {
+  swiperMain.slideTo(2);
+  swiperText.slideTo(2);
+});
+document.querySelector(".btn-territory").addEventListener("click", () => {
+  swiperMain.slideTo(0);
+  swiperText.slideTo(0);
+});
+
+document.querySelector(".card-terrytory").addEventListener("click", () => {
+  swiperText.slideTo(0);
+});
+document.querySelector(".card-parking").addEventListener("click", () => {
+  swiperText.slideTo(1);
+});
+document.querySelector(".card-architecture").addEventListener("click", () => {
+  swiperText.slideTo(2);
+});
+document.querySelector(".card-security").addEventListener("click", () => {
+  swiperText.slideTo(3);
 });
