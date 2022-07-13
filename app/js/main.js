@@ -12,6 +12,17 @@ let swiperNav = new Swiper(sliderNav, {
     320: {
       direction: "horizontal",
     },
+    // 375: {
+    //   slidesPerView: 2,
+    // },
+
+    // 550: {
+    //   slidesPerView: 3,
+    // },
+
+    // 768: {
+    //   slidesPerView: "auto",
+    // },
 
     1024: {
       slidesPerView: 3,
@@ -44,11 +55,6 @@ let swiperText = new Swiper(sliderText, {
   fadeEffect: {
     crossFade: true,
   },
-
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
-  // mousewheel: true,
 });
 
 document.querySelector(".btn-parking").addEventListener("click", () => {

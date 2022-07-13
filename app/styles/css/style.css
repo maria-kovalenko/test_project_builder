@@ -115,7 +115,7 @@ input[type=radio].visually-hidden {
   width: 90%;
   margin: 0 auto
 }
-@media (min-width:1200px) {
+@media (min-width:1400px) {
   .container {
     width: 79%
   }
@@ -472,7 +472,7 @@ input[type=radio].visually-hidden {
     margin-bottom: 200px
   }
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .page-main__wrapper {
     margin-bottom: 360px
   }
@@ -619,9 +619,16 @@ input[type=radio].visually-hidden {
 @media (min-width:1024px) {
   .swiper__button {
     width: 100%;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+}
+@media (min-width:1400px) {
+  .swiper__button {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 }
 .btn__text {
@@ -666,8 +673,13 @@ input[type=radio].visually-hidden {
   .btn__name {
     width: 193px;
     min-height: 102px;
-    margin-right: 40px;
+    margin-right: 30px;
     padding: 32px 25px
+  }
+}
+@media (min-width:1400px) {
+  .btn__name {
+    margin-right: 40px
   }
 }
 .btn__name::before {
@@ -717,6 +729,11 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1024px) {
   .swiper {
+    width: 90%
+  }
+}
+@media (min-width:1400px) {
+  .swiper {
     width: 79%
   }
 }
@@ -736,7 +753,10 @@ input[type=radio].visually-hidden {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 }
 .slider-main {
@@ -803,7 +823,17 @@ input[type=radio].visually-hidden {
   left: 15px;
   bottom: 30px;
   background-color: #fff;
-  border-radius: 10px
+  border-radius: 10px;
+  overflow: auto!important
+}
+.slider-text::-webkit-scrollbar {
+  width: 0!important
+}
+.slider-text {
+  -ms-overflow-style: none
+}
+.slider-text {
+  overflow: -moz-scrollbars-none
 }
 @media (min-width:768px) {
   .slider-text {
@@ -822,9 +852,6 @@ input[type=radio].visually-hidden {
   .slider-text {
     width: 538px
   }
-}
-.slider-text__wrapper {
-  height: auto
 }
 .slider-text__slide {
   height: 100%;

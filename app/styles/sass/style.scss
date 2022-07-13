@@ -162,7 +162,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-fourteen-width) {
   .container {
     width: 79%;
   }
@@ -531,7 +531,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-middle) {
   .page-main__wrapper {
     margin-bottom: 360px;
   }
@@ -686,7 +686,12 @@ input[type="radio"].visually-hidden {
 @media (min-width: $tablet-middle) {
   .swiper__button {
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+}
+@media (min-width: $desktop-fourteen-width) {
+  .swiper__button {
+    justify-content: center;
   }
 }
 
@@ -737,8 +742,14 @@ input[type="radio"].visually-hidden {
   .btn__name {
     width: 193px;
     min-height: 102px;
-    margin-right: 40px;
+    margin-right: 30px;
     padding: 32px 25px;
+  }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .btn__name {
+    margin-right: 40px;
   }
 }
 
@@ -798,6 +809,12 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-middle) {
   .swiper {
+    width: 90%;
+  }
+}
+
+@media (min-width: $desktop-fourteen-width) {
+  .swiper {
     width: 79%;
   }
 }
@@ -812,6 +829,7 @@ input[type="radio"].visually-hidden {
     width: 100%;
     margin: 0 auto;
     flex-direction: row;
+    justify-content: center;
   }
 }
 //  --------------- slider-main---------
@@ -859,6 +877,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
+//
 .slider-nav .swiper-slide {
   width: 140px;
   height: 91px;
@@ -891,6 +910,17 @@ input[type="radio"].visually-hidden {
   bottom: 30px;
   background-color: #fff;
   border-radius: 10px;
+  overflow: auto !important;
+}
+
+.slider-text::-webkit-scrollbar {
+  width: 0 !important;
+}
+.slider-text {
+  -ms-overflow-style: none;
+}
+.slider-text {
+  overflow: -moz-scrollbars-none;
 }
 
 @media (min-width: $tablet-width) {
@@ -915,7 +945,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-text__wrapper {
-  height: auto;
+  // height: auto;
 }
 
 .slider-text__slide {
