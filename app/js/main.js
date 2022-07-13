@@ -90,10 +90,17 @@ document.querySelector(".card-security").addEventListener("click", () => {
 
 // ------------ menu -----------------
 
+document.querySelectorAll(".first").forEach((element) => {
+  element.addEventListener("mouseover", function () {
+    element.classList.add("open");
+  });
+});
 
-const linkName = document.querySelectorAll(".navigation__item");
-
-
+document.querySelectorAll(".first").forEach((element) => {
+  element.addEventListener("mouseout", function () {
+    element.classList.remove("open");
+  });
+});
 
 // const linkName = document.querySelector(".navigation__item");
 // const subLinkName = document.querySelector(".sub-navigation__item");
