@@ -90,24 +90,29 @@ document.querySelector(".card-security").addEventListener("click", () => {
 
 // ------------ menu -----------------
 
-const linkName = document.querySelector(".navigation__item");
-const subLinkName = document.querySelector(".sub-navigation__item");
-const subMenu = document.querySelector(".sub-navigation");
 
-let conditionMenu = "close";
-let conditionSubMenu = "close";
+const linkName = document.querySelectorAll(".navigation__item");
 
-linkName.addEventListener("click", function () {
-  if (conditionMenu === "close") {
-    subMenu.classList.add("open");
-    conditionMenu = "open";
-  } else if (conditionMenu === "open" && conditionSubMenu === "close") {
-    subLinkName.addEventListener("click", function () {
-      subMenu.classList.add("open");
-      conditionSubMenu = "open";
-    });
-  } else {
-    subMenu.classList.remove("open");
-    conditionMenu = "close";
-  }
-});
+
+
+// const linkName = document.querySelector(".navigation__item");
+// const subLinkName = document.querySelector(".sub-navigation__item");
+// const subMenu = document.querySelector(".sub-navigation");
+
+// let conditionMenu = "close";
+// let conditionSubMenu = "close";
+
+// linkName.addEventListener("click", function () {
+//   if (conditionMenu === "close") {
+//     subMenu.classList.add("open");
+//     conditionMenu = "open";
+//   } else if (conditionMenu === "open" && conditionSubMenu === "close") {
+//     subLinkName.addEventListener("click", function () {
+//       subMenu.classList.add("open");
+//       conditionSubMenu = "open";
+//     });
+//   } else {
+//     subMenu.classList.remove("open");
+//     conditionMenu = "close";
+//   }
+// });
