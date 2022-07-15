@@ -238,11 +238,20 @@ input[type=radio].visually-hidden {
   transform: rotate(45deg)
 }
 @media (min-width:1024px) {
-  .arrow.arrow--up.arrow::before {
-    display: none
+  .navigation__item.arrow::before {
+    border: solid #212d55;
+    border-width: 0 1px 1px 0
   }
-  .arrow.arrow--down::before {
-    display: none
+  .sub-navigation__item.arrow::before {
+    border: solid #212d55;
+    border-width: 0 1px 1px 0
+  }
+  .sub-navigation__item.arrow--down::before {
+    right: 10px;
+    top: 13px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg)
   }
 }
 .page-header__mobile-menu {
@@ -330,7 +339,7 @@ input[type=radio].visually-hidden {
 }
 @media (min-width:1400px) {
   .navigation__item {
-    font-size: 18px
+    font-size: 17px
   }
 }
 .hover-link {
@@ -650,11 +659,6 @@ input[type=radio].visually-hidden {
   line-height: 22px;
   color: #212d55
 }
-@media (min-width:768px) {
-  .btn__text:hover {
-    color: #31bef4
-  }
-}
 @media (min-width:1400px) {
   .btn__text {
     font-size: 22px;
@@ -675,6 +679,15 @@ input[type=radio].visually-hidden {
   -webkit-box-shadow: 0 5px 15px rgba(33,45,85,.2);
   box-shadow: 0 5px 15px rgba(33,45,85,.2);
   border-radius: 10px
+}
+.btn__name:hover span {
+  color: #31bef4
+}
+.btn__name:hover::before {
+  border: 1px solid #31bef4
+}
+.btn__name:hover::after {
+  border-right: 1px solid #31bef4
 }
 @media (min-width:980px) {
   .btn__name {
@@ -724,12 +737,6 @@ input[type=radio].visually-hidden {
     min-height: 72px;
     left: calc(50% - 81.5px);
     top: calc(50% - 36px)
-  }
-  .btn__name:hover::before {
-    border: 1px solid #31bef4
-  }
-  .btn__name:hover::after {
-    border-right: 1px solid #31bef4
   }
   .btn__name::after {
     height: 18px;
