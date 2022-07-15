@@ -50,6 +50,11 @@ a {
 a:hover {
   color: #31bef4
 }
+@media (min-width:1024px) {
+  a {
+    color: #212d55
+  }
+}
 .button {
   display: inline-block;
   margin-bottom: 5px;
@@ -232,7 +237,7 @@ input[type=radio].visually-hidden {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg)
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .arrow.arrow--up.arrow::before {
     display: none
   }
@@ -243,7 +248,7 @@ input[type=radio].visually-hidden {
 .page-header__mobile-menu {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   top: 0;
   left: 0;
@@ -310,7 +315,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 30px;
   cursor: pointer
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .navigation__item {
     position: relative;
     margin-right: 32px;
@@ -322,19 +327,14 @@ input[type=radio].visually-hidden {
   .navigation__item:last-child {
     margin-right: 0
   }
-  .hover-link:hover {
-    color: #31bef4
-  }
-}
-@media (min-width:1024px) {
-  .navigation__item {
-    padding: 10px 0
-  }
 }
 @media (min-width:1400px) {
   .navigation__item {
     font-size: 18px
   }
+}
+.hover-link {
+  padding: 10px 0
 }
 .sub-navigation {
   display: none
@@ -344,10 +344,7 @@ input[type=radio].visually-hidden {
   font-family: Gilroy-Regular;
   font-weight: 400
 }
-@media (min-width:768px) {
-  .sub-navigation__link {
-    color: #212d55
-  }
+@media (min-width:1024px) {
   .sub-navigation__item {
     margin-bottom: 0;
     padding: 7px 30px
@@ -363,11 +360,11 @@ input[type=radio].visually-hidden {
 .menu-level-2 .sub-navigation__item {
   margin-bottom: 9px
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .menu-level-1 {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 130%;
     left: 50%;
     width: 210px;
     margin: 0;
@@ -414,7 +411,7 @@ input[type=radio].visually-hidden {
 .mobile-menu__contacts {
   padding: 0 30px 64px 30px
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .mobile-menu__contacts {
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -430,7 +427,7 @@ input[type=radio].visually-hidden {
   font-size: 20px;
   line-height: 25px
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .contacts__number {
     font-size: 16px;
     line-height: 20px;
@@ -452,7 +449,7 @@ input[type=radio].visually-hidden {
   font-family: Raleway;
   font-weight: 600
 }
-@media (min-width:768px) {
+@media (min-width:1024px) {
   .contacts__order a {
     font-size: 16px;
     line-height: 20px;
@@ -888,5 +885,6 @@ input[type=radio].visually-hidden {
   line-height: 19px
 }
 .slider-text__description:last-child {
-  margin-bottom: 0
+  margin-bottom: 0;
+  padding-bottom: 20px
 }

@@ -79,6 +79,12 @@ a {
   }
 }
 
+@media (min-width: $tablet-middle) {
+  a {
+    color: $bg-darkblue;
+  }
+}
+
 .button {
   display: inline-block;
   margin-bottom: 5px;
@@ -275,7 +281,7 @@ input[type="radio"].visually-hidden {
   transform: rotate(45deg);
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-middle) {
   .arrow.arrow--up.arrow::before {
     display: none;
   }
@@ -288,7 +294,7 @@ input[type="radio"].visually-hidden {
 .page-header__mobile-menu {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   top: 0;
   left: 0;
@@ -344,7 +350,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
   cursor: pointer;
 }
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-middle) {
   .navigation__item {
     position: relative;
     margin-right: 32px;
@@ -357,22 +363,22 @@ input[type="radio"].visually-hidden {
       margin-right: 0;
     }
   }
-
-  .hover-link:hover {
-    color: $bg-lightblue;
-  }
 }
 
-@media (min-width: $tablet-middle) {
-  .navigation__item {
-    padding: 10px 0;
-  }
-}
+// @media (min-width: $tablet-middle) {
+//   .navigation__item {
+//     padding: 10px;
+//   }
+// }
 
 @media (min-width: $desktop-fourteen-width) {
   .navigation__item {
     font-size: 18px;
   }
+}
+
+.hover-link {
+  padding: 10px 0;
 }
 
 .sub-navigation {
@@ -385,11 +391,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 }
 
-@media (min-width: $tablet-width) {
-  .sub-navigation__link {
-    color: $bg-darkblue;
-  }
-
+@media (min-width: $tablet-middle) {
   .sub-navigation__item {
     margin-bottom: 0;
     padding: 7px 30px;
@@ -408,11 +410,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 9px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-middle) {
   .menu-level-1 {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 130%;
     left: 50%;
     width: 210px;
     margin: 0;
@@ -465,7 +467,7 @@ input[type="radio"].visually-hidden {
   padding: 0 30px 64px 30px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-middle) {
   .mobile-menu__contacts {
     flex-shrink: 0;
     padding: 0;
@@ -482,7 +484,7 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-middle) {
   .contacts__number {
     font-size: 16px;
     line-height: 20px;
@@ -507,7 +509,7 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-middle) {
   .contacts__order a {
     font-size: 16px;
     line-height: 20px;
@@ -963,10 +965,6 @@ input[type="radio"].visually-hidden {
   }
 }
 
-.slider-text__wrapper {
-  // height: auto;
-}
-
 .slider-text__slide {
   height: 100%;
 
@@ -990,5 +988,6 @@ input[type="radio"].visually-hidden {
 
   &:last-child {
     margin-bottom: 0;
+    padding-bottom: 20px;
   }
 }

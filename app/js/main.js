@@ -91,16 +91,16 @@ document.querySelector(".card-security").addEventListener("click", () => {
 // ------------ menu -----------------
 
 document.querySelectorAll(".first").forEach((element) => {
-  element.addEventListener("click", function () {
+  element.addEventListener("mouseover", function () {
     element.classList.add("open");
   });
 });
 
-// document.querySelectorAll(".first").forEach((element) => {
-//   element.addEventListener("click", function () {
-//     element.classList.remove("open");
-//   });
-// });
+document.querySelectorAll(".first").forEach((element) => {
+  element.addEventListener("mouseout", function () {
+    element.classList.remove("open");
+  });
+});
 
 // const linkName = document.querySelector(".navigation__item");
 // const subLinkName = document.querySelector(".sub-navigation__item");
