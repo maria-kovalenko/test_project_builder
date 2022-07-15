@@ -389,7 +389,9 @@ input[type="radio"].visually-hidden {
 }
 
 .sub-navigation {
-  display: none;
+  // display: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .sub-navigation__item {
@@ -419,7 +421,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $tablet-middle) {
   .menu-level-1 {
-    display: none;
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 130%;
     left: 50%;
@@ -443,7 +447,9 @@ input[type="radio"].visually-hidden {
   }
 
   .menu-level-2 {
-    display: none;
+    // display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 0;
     left: 100%;
@@ -467,7 +473,10 @@ input[type="radio"].visually-hidden {
 }
 
 .open > ul {
-  display: block;
+  // display: block;
+  opacity: 1;
+  visibility: initial;
+  transition: opacity 0.5s;
 }
 
 .mobile-menu__contacts {
