@@ -350,7 +350,7 @@ input[type=radio].visually-hidden {
   }
   .sub-navigation__item {
     margin-bottom: 0;
-    padding: 5px 30px
+    padding: 7px 30px
   }
 }
 .menu-level-1 {
@@ -398,6 +398,9 @@ input[type=radio].visually-hidden {
     -webkit-box-shadow: 0 10px 28px rgba(0,0,0,.2);
     box-shadow: 0 10px 28px rgba(0,0,0,.2);
     z-index: 1
+  }
+  .menu-level-2 .sub-navigation__item {
+    margin-bottom: 0
   }
 }
 @media (min-width:1400px) {
