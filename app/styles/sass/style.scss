@@ -389,9 +389,9 @@ input[type="radio"].visually-hidden {
 }
 
 .sub-navigation {
-  // display: none;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
+  // opacity: 0;
+  // visibility: hidden;
 }
 
 .sub-navigation__item {
@@ -401,6 +401,11 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: $tablet-middle) {
+  .sub-navigation {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+  }
   .sub-navigation__item {
     margin-bottom: 0;
     padding: 7px 30px;
@@ -409,6 +414,8 @@ input[type="radio"].visually-hidden {
 
 .menu-level-1 {
   margin-top: 15px;
+  // opacity: 0;
+  // visibility: hidden;
 }
 .menu-paragraph {
   margin-top: 15px;
@@ -473,7 +480,7 @@ input[type="radio"].visually-hidden {
 }
 
 .open > ul {
-  // display: block;
+  display: block;
   opacity: 1;
   visibility: initial;
   transition: opacity 0.5s;

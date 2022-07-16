@@ -346,8 +346,7 @@ input[type=radio].visually-hidden {
   padding: 10px 0
 }
 .sub-navigation {
-  opacity: 0;
-  visibility: hidden
+  display: none
 }
 .sub-navigation__item {
   margin-bottom: 10px;
@@ -355,6 +354,11 @@ input[type=radio].visually-hidden {
   font-weight: 400
 }
 @media (min-width:1024px) {
+  .sub-navigation {
+    display: block;
+    opacity: 0;
+    visibility: hidden
+  }
   .sub-navigation__item {
     margin-bottom: 0;
     padding: 7px 30px
@@ -418,6 +422,7 @@ input[type=radio].visually-hidden {
   }
 }
 .open > ul {
+  display: block;
   opacity: 1;
   visibility: initial;
   -webkit-transition: opacity .5s;
