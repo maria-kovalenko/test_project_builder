@@ -115,37 +115,43 @@ buttonCloseMenu.addEventListener("click", function () {
   }
 });
 
-// --------------------------- открытие навигационных пунктов на мобильном устройстве ----------
+// --------------------------- открытие навигационного меню----------
 
-// document.querySelectorAll(".navigation__item").forEach((element) => {
-//   element.addEventListener("click", OpenNavList);
-// });
-
-// function OpenNavList(event) {
-//   event.stopPropagation();
-//   if (this.classList.contains("open")) {
-//     this.classList.remove("open");
-//   } else {
-//     this.classList.add("open");
-//     let childrenLi = this.querySelectorAll("li");
-//     if (childrenLi.length !== 0) {
-//       childrenLi.forEach((element) => {
-//         element.addEventListener("click", OpenNavList);
-//       });
-//     }
-//   }
-// }
-
-// ------------ menu -----------------
-
-document.querySelectorAll(".first").forEach((element) => {
-  element.addEventListener("mouseover", function () {
-    element.classList.add("open");
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  // для мобильных устройств
+  document.querySelectorAll(".navigation__item").forEach((element) => {
+    element.addEventListener("click", OpenNavList);
   });
-});
 
-document.querySelectorAll(".first").forEach((element) => {
-  element.addEventListener("mouseout", function () {
-    element.classList.remove("open");
+  function OpenNavList(event) {
+    event.stopPropagation();
+    if (this.classList.contains("open")) {
+      this.classList.remove("open");
+    } else {
+      this.classList.add("open");
+      let childrenLi = this.querySelectorAll("li");
+      if (childrenLi.length !== 0) {
+        childrenLi.forEach((element) => {
+          element.addEventListener("click", OpenNavList);
+        });
+      }
+    }
+  }
+} else {
+  //для обычных устройств
+  document.querySelectorAll(".first").forEach((element) => {
+    element.addEventListener("mouseover", function () {
+      element.classList.add("open");
+    });
   });
-});
+
+  document.querySelectorAll(".first").forEach((element) => {
+    element.addEventListener("mouseout", function () {
+      element.classList.remove("open");
+    });
+  });
+}
