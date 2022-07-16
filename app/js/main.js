@@ -88,6 +88,54 @@ document.querySelector(".card-security").addEventListener("click", () => {
   swiperText.slideTo(3);
 });
 
+// --------------------------- открытие меню ----------
+
+const buttonOpenMenu = document.querySelector(".page-header__menu-btn");
+const buttonCloseMenu = document.querySelector(".page-header__toggle--opened");
+const menu = document.querySelector(".page-header__mobile-menu");
+
+let condition = "close";
+
+buttonOpenMenu.addEventListener("click", function () {
+  if (condition === "close") {
+    menu.style.display = "block";
+    condition = "open";
+  }
+});
+
+buttonCloseMenu.addEventListener("click", function () {
+  if (condition === "open") {
+    menu.style.display = "none";
+
+    condition = "close";
+
+    document.querySelectorAll(".navigation__list .open").forEach((element) => {
+      element.classList.remove("open");
+    });
+  }
+});
+
+// --------------------------- открытие навигационных пунктов на мобильном устройстве ----------
+
+// document.querySelectorAll(".navigation__item").forEach((element) => {
+//   element.addEventListener("click", OpenNavList);
+// });
+
+// function OpenNavList(event) {
+//   event.stopPropagation();
+//   if (this.classList.contains("open")) {
+//     this.classList.remove("open");
+//   } else {
+//     this.classList.add("open");
+//     let childrenLi = this.querySelectorAll("li");
+//     if (childrenLi.length !== 0) {
+//       childrenLi.forEach((element) => {
+//         element.addEventListener("click", OpenNavList);
+//       });
+//     }
+//   }
+// }
+
 // ------------ menu -----------------
 
 document.querySelectorAll(".first").forEach((element) => {
@@ -101,25 +149,3 @@ document.querySelectorAll(".first").forEach((element) => {
     element.classList.remove("open");
   });
 });
-
-// const linkName = document.querySelector(".navigation__item");
-// const subLinkName = document.querySelector(".sub-navigation__item");
-// const subMenu = document.querySelector(".sub-navigation");
-
-// let conditionMenu = "close";
-// let conditionSubMenu = "close";
-
-// linkName.addEventListener("click", function () {
-//   if (conditionMenu === "close") {
-//     subMenu.classList.add("open");
-//     conditionMenu = "open";
-//   } else if (conditionMenu === "open" && conditionSubMenu === "close") {
-//     subLinkName.addEventListener("click", function () {
-//       subMenu.classList.add("open");
-//       conditionSubMenu = "open";
-//     });
-//   } else {
-//     subMenu.classList.remove("open");
-//     conditionMenu = "close";
-//   }
-// });
