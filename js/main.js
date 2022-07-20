@@ -45,6 +45,7 @@ let swiperMain = new Swiper(sliderMain, {
   thumbs: {
     swiper: swiperNav,
   },
+  
 });
 
 let swiperText = new Swiper(sliderText, {
