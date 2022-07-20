@@ -32,8 +32,7 @@ body {
   font-family: Gilroy-Regular, sans-serif, serif;
   color: #212d55;
   background-color: #fff;
-  background-image: url(../../../img/header-blur.svg),
-    url(../../../img/bg-image.png);
+  background-image: url(../../img/header-blur.svg), url(../../img/bg-image.png);
   background-position: center -100px, -427px 0;
   background-repeat: no-repeat, no-repeat;
 }
