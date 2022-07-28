@@ -157,3 +157,13 @@ if (
     });
   });
 }
+
+const modalMenu = document.querySelector(".page-header__mobile-menu");
+const toggleMenu = document.querySelector(".page-header__menu-btn");
+
+toggleMenu.addEventListener("click", function () {
+  modalMenu.classList.toggle("hidden");
+  document.body.style.overflowY = modalMenu.classList.contains("hidden")
+    ? "scroll"
+    : "hidden";
+});
