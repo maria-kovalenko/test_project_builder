@@ -12,17 +12,6 @@ let swiperNav = new Swiper(sliderNav, {
     320: {
       direction: "horizontal",
     },
-    // 375: {
-    //   slidesPerView: 2,
-    // },
-
-    // 550: {
-    //   slidesPerView: 3,
-    // },
-
-    // 768: {
-    //   slidesPerView: "auto",
-    // },
 
     1024: {
       slidesPerView: 3,
@@ -95,12 +84,15 @@ document.querySelector(".card-security").addEventListener("click", () => {
 const buttonOpenMenu = document.querySelector(".page-header__menu-btn");
 const buttonCloseMenu = document.querySelector(".page-header__toggle--opened");
 const menu = document.querySelector(".page-header__mobile-menu");
+const content = document.querySelector(".page-main");
 
 let condition = "close";
 
 buttonOpenMenu.addEventListener("click", function () {
   if (condition === "close") {
     menu.style.display = "block";
+    menu.style.height = "min-content";
+    content.style.display = "none";
     condition = "open";
   }
 });
@@ -108,7 +100,7 @@ buttonOpenMenu.addEventListener("click", function () {
 buttonCloseMenu.addEventListener("click", function () {
   if (condition === "open") {
     menu.style.display = "none";
-
+    content.style.display = "block";
     condition = "close";
 
     document.querySelectorAll(".navigation__list .open").forEach((element) => {
@@ -157,13 +149,3 @@ if (
     });
   });
 }
-
-const modalMenu = document.querySelector(".page-header__mobile-menu");
-const toggleMenu = document.querySelector(".page-header__menu-btn");
-
-toggleMenu.addEventListener("click", function () {
-  modalMenu.classList.toggle("hidden");
-  document.body.style.overflowY = modalMenu.classList.contains("hidden")
-    ? "scroll"
-    : "hidden";
-});
