@@ -91,7 +91,6 @@ let condition = "close";
 buttonOpenMenu.addEventListener("click", function () {
   if (condition === "close") {
     menu.style.display = "block";
-    menu.style.height = "min-content";
     content.style.display = "none";
     condition = "open";
   }
