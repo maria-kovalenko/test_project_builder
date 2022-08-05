@@ -290,7 +290,7 @@ input[type="radio"].visually-hidden {
     position: static;
     width: 70%;
     background-color: transparent;
-    /* overflow-y: visible; */
+    overflow-y: visible;
   }
 }
 .navigation__list {
@@ -432,6 +432,10 @@ input[type="radio"].visually-hidden {
   .menu-level-1 {
     width: 250px;
   }
+}
+
+.showMenu {
+  display: block;
 }
 .open > ul {
   display: block;

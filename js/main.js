@@ -79,7 +79,7 @@ document.querySelector(".card-security").addEventListener("click", () => {
   swiperText.slideTo(3);
 });
 
-// --------------------------- открытие меню ----------
+// --------------------------- открытие/закрытие меню ----------
 
 const buttonOpenMenu = document.querySelector(".page-header__menu-btn");
 const buttonCloseMenu = document.querySelector(".page-header__toggle--opened");
@@ -90,15 +90,17 @@ let condition = "close";
 
 buttonOpenMenu.addEventListener("click", function () {
   if (condition === "close") {
-    menu.style.display = "block";
+    menu.classList.add("showMenu");
+    console.log("jhjjhj");
     content.style.display = "none";
+
     condition = "open";
   }
 });
 
 buttonCloseMenu.addEventListener("click", function () {
   if (condition === "open") {
-    menu.style.display = "none";
+    menu.classList.remove("showMenu");
     content.style.display = "block";
     condition = "close";
 
@@ -108,7 +110,7 @@ buttonCloseMenu.addEventListener("click", function () {
   }
 });
 
-// --------------------------- открытие навигационного меню----------
+// --------------------------- открытие меню исходя из устройства----------
 
 if (
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
