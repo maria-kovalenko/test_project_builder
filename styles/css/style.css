@@ -52,6 +52,7 @@ a {
 }
 a:hover {
   color: #31bef4;
+  transition-duration: .5s;
 }
 @media (min-width: 1024px) {
   a {
@@ -494,6 +495,7 @@ input[type="radio"].visually-hidden {
   }
   .contacts__order a:hover {
     color: #31bef4;
+    transition-duration: .5s;
   }
 }
 @media (min-width: 1400px) {
